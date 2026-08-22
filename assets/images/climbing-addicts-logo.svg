@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 760" width="600" height="760" role="img" aria-label="Climbing Addicts">
+  <defs>
+    <clipPath id="mountClip">
+      <polygon points="84,506 152,246 196,320 240,398 300,368 364,394 410,300 460,178 516,506"></polygon>
+    </clipPath>
+  </defs>
+  <rect width="600" height="760" fill="#0D0F14"></rect>
+  <polygon points="84,506 152,246 196,320 240,398 300,368 364,394 410,300 460,178 516,506" fill="#2E333D"></polygon>
+  <g clip-path="url(#mountClip)">
+    <polygon points="84,506 150,346 200,404 214,506" fill="#39404C"></polygon>
+    <polygon points="150,346 128,384 176,384" fill="#6B7484"></polygon>
+    <polygon points="262,232 300,272 352,176 372,506 206,506" fill="#252A34"></polygon>
+    <polygon points="262,232 236,278 292,278" fill="#6B7484"></polygon>
+    <polygon points="352,176 322,224 388,224" fill="#7C8496"></polygon>
+    <polygon points="352,176 414,296 452,254 516,506 372,506" fill="#1C2028"></polygon>
+    <polygon points="452,254 430,290 476,290" fill="#5B6474"></polygon>
+    <polygon points="352,176 388,224 372,506 300,506" fill="#2A303A"></polygon>
+  </g>
+  <polygon points="84,506 152,246 196,320 240,398 300,368 364,394 410,300 460,178 516,506" fill="none" stroke="#FF7A1A" stroke-width="9" stroke-linejoin="miter" stroke-linecap="square"></polygon>
+  <rect x="84" y="516" width="432" height="12" fill="#FF7A1A"></rect>
+  <g stroke="#2DD4BF" stroke-width="5" fill="none" stroke-dasharray="14 12" stroke-linecap="square">
+    <polyline points="502,492 488,414 480,340 470,262 462,198"></polyline>
+  </g>
+  <g fill="#2DD4BF">
+    <rect x="494" y="470" width="12" height="12"></rect>
+    <rect x="483" y="404" width="12" height="12"></rect>
+    <rect x="475" y="330" width="12" height="12"></rect>
+    <rect x="466" y="252" width="12" height="12"></rect>
+  </g>
+  <rect x="457" y="104" width="6" height="80" fill="#FFFFFF"></rect>
+  <polygon points="463,108 508,122 463,136" fill="#2DD4BF"></polygon>
+  <g transform="translate(84,64) scale(0.72)">
+      <polygon points="238,204 206,166 186,120 186,92 204,98 210,124 232,160 272,214" fill="#FFA45C"></polygon>
+      <polygon points="238,204 232,160 272,214" fill="#E86A12"></polygon>
+      <polygon points="200,156 226,150 232,164 208,170" fill="#E86A12"></polygon>
+      <polygon points="190,118 214,116 216,130 192,132" fill="#E86A12"></polygon>
+      <polygon points="362,204 394,166 414,120 414,92 396,98 390,124 368,160 328,214" fill="#FFA45C"></polygon>
+      <polygon points="362,204 368,160 328,214" fill="#E86A12"></polygon>
+      <polygon points="400,156 374,150 368,164 392,170" fill="#E86A12"></polygon>
+      <polygon points="410,118 386,116 384,130 408,132" fill="#E86A12"></polygon>
+      <polygon points="234,248 166,246 138,288 186,308 238,284" fill="#FF7A1A"></polygon>
+      <polygon points="234,248 180,272 186,308 238,284" fill="#D8620F"></polygon>
+      <polygon points="366,248 434,246 462,288 414,308 362,284" fill="#FF7A1A"></polygon>
+      <polygon points="366,248 420,272 414,308 362,284" fill="#D8620F"></polygon>
+      <polygon points="300,196 244,206 224,252 234,300 258,342 278,378 322,378 342,342 366,300 376,252 356,206" fill="#FF7A1A"></polygon>
+      <polygon points="300,196 356,206 376,252 366,300 342,342 322,378 300,372" fill="#E86A12"></polygon>
+      <polygon points="278,378 322,378 342,342 300,332 258,342" fill="#FFA45C"></polygon>
+      <polygon points="246,274 272,246 298,274 272,260" fill="#12151B"></polygon>
+      <polygon points="302,274 328,246 354,274 328,260" fill="#12151B"></polygon>
+      <polygon points="288,306 296,318 282,318" fill="#B04E0A"></polygon>
+      <polygon points="312,306 318,318 304,318" fill="#B04E0A"></polygon>
+      <polygon points="264,322 336,322 322,358 278,358" fill="#12151B"></polygon>
+      <polygon points="270,326 330,326 324,338 276,338" fill="#FFFFFF"></polygon>
+      <polygon points="292,350 314,346 308,358 296,358" fill="#B04E0A"></polygon>
+      <polygon points="284,378 316,378 310,410 300,438 290,410" fill="#D8620F"></polygon>
+      <polygon points="300,438 310,410 300,404" fill="#B04E0A"></polygon>
+      <polygon points="294,420 306,420 300,438" fill="#2DD4BF"></polygon>
+  </g>
+  <g font-family="&#39;Archivo Black&#39;,&#39;Arial Black&#39;,&#39;Helvetica Neue&#39;,Impact,sans-serif" font-weight="900" text-anchor="middle">
+    <text transform="translate(300,646) scale(0.82,1)" font-size="86" letter-spacing="3" fill="#FFFFFF">CLIMBING</text>
+    <text transform="translate(300,732) scale(0.82,1)" font-size="86" letter-spacing="3" fill="#FF7A1A">ADDICTS</text>
+  </g>
+</svg>
