@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Climbing Addicts — Logo & animations</title>
+<link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+<style>
+body{margin:0;background:#0D0F14;color:#fff;font-family:Barlow,Arial,sans-serif;padding:40px}
+h1{font-size:28px;margin:0 0 8px}h2{color:#FF7A1A;font-size:18px;margin:32px 0 12px}
+p{color:#9AA3B2}.grid{display:flex;gap:20px;flex-wrap:wrap}.card{background:#161A21;border:1px solid #2E333D;border-radius:16px;padding:20px;text-align:center;min-width:200px}
+.card img{display:block;margin:0 auto;max-width:100%;height:auto}.tag{font-size:11px;letter-spacing:.15em;color:#7A828F;text-transform:uppercase;font-family:monospace;margin-top:12px}
+code{color:#2DD4BF}
+</style>
+</head>
+<body>
+<h1>Climbing Addicts — logo écusson + animations</h1>
+<p>Source : <code>forme-option-b-ecusson.svg</code> (visage chèvre/dragon + écusson orange + montagnes).</p>
+
+<h2>1. Logo — avec / sans titre, avec / sans écusson</h2>
+<div class="grid">
+<div class="card"><img src="assets/images/forme-option-b-ecusson.svg" width="220" alt="full"><div class="tag">A. Full : écusson + titre</div></div>
+<div class="card"><img src="assets/images/logo-ecusson-notext.svg" width="220" alt="ecusson sans texte"><div class="tag">B. Écusson sans titre (header app)</div></div>
+<div class="card" style="display:flex;align-items:center;justify-content:center;flex-direction:column"><img src="assets/images/logo-face-only.svg" width="180" alt="visage seul"><div class="tag">C. Visage seul (fond transparent)</div></div>
+<div class="card"><img src="assets/images/favicon.svg" width="96" alt="favicon"><div class="tag">D. Favicon visage (64px)</div></div>
+</div>
+
+<h2>2. Favicon / app icons</h2>
+<div class="grid">
+<div class="card"><img src="assets/images/favicon-32.png" width="32" style="image-rendering:pixelated" alt=""><div class="tag">favicon-32.png</div></div>
+<div class="card"><img src="assets/images/apple-touch-icon.png" width="90" alt=""><div class="tag">apple-touch 180</div></div>
+<div class="card"><img src="assets/images/icon-192.png" width="96" alt=""><div class="tag">icon 192 / 512 (PWA)</div></div>
+</div>
+<p>Branchés dans <code>index.html</code> : rel=icon svg + png32 + apple-touch + manifest.</p>
+
+<h2>3. Animations GIF (prêtes pour l'app)</h2>
+<div class="grid">
+<div class="card"><img src="assets/images/splash.gif" width="220" alt="splash"><div class="tag">splash.gif — ouverture app (écusson + visage pop)</div></div>
+<div class="card"><img src="assets/images/collect-holds.gif" width="260" alt="collect"><div class="tag">collect-holds.gif — récolte : jug / crimp / sloper / pinch / volume + visage qui rit +10</div></div>
+</div>
+
+<h2>4. Versions SVG animées (plus nettes que GIF, même usage)</h2>
+<div class="grid">
+<div class="card"><img src="assets/images/splash-animated.svg" width="220" alt=""><div class="tag">splash-animated.svg (SMIL, loop 1x)</div></div>
+<div class="card"><img src="assets/images/collect-animated.svg" width="260" alt=""><div class="tag">collect-animated.svg (cycle 5 prises + visage qui rit, 5s)</div></div>
+</div>
+<p>Astuce : utilise les <code>.svg animés</code> dans le HTML (léger, net retina), garde les <code>.gif</code> pour iMessage / Discord / splash natif.</p>
+</body>
+</html>

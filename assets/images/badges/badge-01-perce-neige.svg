@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 760" width="600" height="760" role="img" aria-label="Badge PERCE-NEIGE — Climbing Addicts">
+  <defs>
+    <clipPath id="clip-01perceneige">
+      <polygon points="96,60 504,60 504,338 300,536 96,338"></polygon>
+    </clipPath>
+  </defs>
+  <rect width="600" height="760" fill="#0D0F14"></rect>
+  <polygon points="96,60 504,60 504,338 300,536 96,338" fill="#161A21"></polygon>
+  <g clip-path="url(#clip-01perceneige)">
+    <polygon points="88,412 88,286 156,196 214,268 268,186 330,268 396,168 460,254 512,198 512,412" fill="#39404C"></polygon>
+    <polygon points="156,196 126,232 186,232" fill="#5B6474"></polygon>
+    <polygon points="268,186 238,222 298,222" fill="#5B6474"></polygon>
+    <polygon points="396,168 366,206 426,206" fill="#5B6474"></polygon>
+    <polygon points="88,412 88,300 156,196 214,268 186,412" fill="#2A303A"></polygon>
+    <polygon points="268,186 330,268 396,168 372,412 232,412" fill="#252A34"></polygon>
+    <polygon points="396,168 460,254 512,198 512,412 430,412" fill="#2E333D"></polygon>
+    <polygon points="88,412 512,412 512,540 88,540" fill="#1C2028"></polygon>
+    <polygon points="132,124 150,152 114,152" fill="#2DD4BF" opacity="0.55"></polygon>
+    <polygon points="472,330 488,356 456,356" fill="#2DD4BF" opacity="0.4"></polygon>
+  </g>
+  <polygon points="96,60 504,60 504,338 300,536 96,338" fill="none" stroke="#9AA3B2" stroke-width="9" stroke-linejoin="miter"></polygon>
+  <g transform="translate(300,285) scale(1.8) translate(-300,-285)">
+      <polygon points="300,196 306,196 304,336 296,336" fill="#3F9D6B"/>
+      <polygon points="298,300 236,318 242,332 299,314" fill="#2B7A4F"/>
+      <polygon points="302,300 364,318 358,332 301,314" fill="#3F9D6B"/>
+      <polygon points="300,196 288,212 312,212" fill="#2B7A4F"/>
+      <polygon points="300,212 276,282 292,296 300,288" fill="#E8ECF1"/>
+      <polygon points="300,212 324,282 308,296 300,288" fill="#C9D1DC"/>
+      <polygon points="300,212 288,290 300,306 312,290" fill="#FFFFFF"/>
+      <polygon points="292,282 308,282 300,296" fill="#2DD4BF"/>
+      <polygon points="284,220 292,220 290,244 282,244" fill="#C9D1DC" opacity="0.7"/>
+    </g>
+  <polygon points="268,40 332,40 332,72 300,92 268,72" fill="#9AA3B2"></polygon>
+  <text x="300" y="70" text-anchor="middle" font-family="'Archivo Black','Arial Black',sans-serif" font-weight="900" font-size="26" fill="#0D0F14">I</text>
+  <text x="300" y="100" text-anchor="middle" font-family="'Barlow',Arial,sans-serif" font-weight="700" font-size="16" letter-spacing="3" fill="#7A828F">CLIMBING ADDICTS</text>
+  <g fill="#9AA3B2">
+    <circle cx="210" cy="436" r="8" fill="#9AA3B2"/>
+    <circle cx="246" cy="436" r="8" fill="#2E333D"/>
+    <circle cx="282" cy="436" r="8" fill="#2E333D"/>
+    <circle cx="318" cy="436" r="8" fill="#2E333D"/>
+    <circle cx="354" cy="436" r="8" fill="#2E333D"/>
+    <circle cx="390" cy="436" r="8" fill="#2E333D"/>
+  </g>
+  <g font-family="'Archivo Black','Arial Black',sans-serif" font-weight="900" text-anchor="middle">
+    <text transform="translate(300,646) scale(0.82,1)" font-size="52" letter-spacing="2" fill="#FFFFFF">PERCE-NEIGE</text>
+    <text transform="translate(300,700) scale(0.82,1)" font-size="30" letter-spacing="2" fill="#9AA3B2">NIVEAU I — DÉCOUVERTE</text>
+  </g>
+  <text x="300" y="736" text-anchor="middle" font-family="'Barlow',Arial,sans-serif" font-size="23" font-weight="600" letter-spacing="1" fill="#7A828F">1 voie enregistrée</text>
+</svg>

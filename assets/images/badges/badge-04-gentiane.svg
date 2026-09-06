@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 760" width="600" height="760" role="img" aria-label="Badge GENTIANE — Climbing Addicts">
+  <defs>
+    <clipPath id="clip-04gentiane">
+      <polygon points="96,60 504,60 504,338 300,536 96,338"></polygon>
+    </clipPath>
+  </defs>
+  <rect width="600" height="760" fill="#0D0F14"></rect>
+  <polygon points="96,60 504,60 504,338 300,536 96,338" fill="#161A21"></polygon>
+  <g clip-path="url(#clip-04gentiane)">
+    <polygon points="88,412 88,286 156,196 214,268 268,186 330,268 396,168 460,254 512,198 512,412" fill="#39404C"></polygon>
+    <polygon points="156,196 126,232 186,232" fill="#5B6474"></polygon>
+    <polygon points="268,186 238,222 298,222" fill="#5B6474"></polygon>
+    <polygon points="396,168 366,206 426,206" fill="#5B6474"></polygon>
+    <polygon points="88,412 88,300 156,196 214,268 186,412" fill="#2A303A"></polygon>
+    <polygon points="268,186 330,268 396,168 372,412 232,412" fill="#252A34"></polygon>
+    <polygon points="396,168 460,254 512,198 512,412 430,412" fill="#2E333D"></polygon>
+    <polygon points="88,412 512,412 512,540 88,540" fill="#1C2028"></polygon>
+    <polygon points="132,124 150,152 114,152" fill="#2DD4BF" opacity="0.55"></polygon>
+    <polygon points="472,330 488,356 456,356" fill="#2DD4BF" opacity="0.4"></polygon>
+  </g>
+  <polygon points="96,60 504,60 504,338 300,536 96,338" fill="none" stroke="#60A5FA" stroke-width="9" stroke-linejoin="miter"></polygon>
+  <g transform="translate(300,285) scale(1.8) translate(-300,-285)">
+      <polygon points="300,320 244,336 250,350 300,334" fill="#2B7A4F"/>
+      <polygon points="300,320 356,336 350,350 300,334" fill="#3F9D6B"/>
+      <polygon points="300,196 318,248 372,248 328,282 344,336 300,304 256,336 272,282 228,248 282,248" fill="#3B82F6"/>
+      <polygon points="300,196 318,248 372,248 328,282 344,336 300,304 300,196" fill="#2563EB"/>
+      <polygon points="300,248 312,276 342,276 318,294 326,322 300,306 274,322 282,294 258,276 288,276" fill="#FFD166"/>
+      <polygon points="300,276 306,290 300,304 294,290" fill="#E86A12"/>
+      <circle cx="300" cy="290" r="8" fill="#0D0F14"/>
+      <polygon points="282,248 292,248 290,262 280,262" fill="#1D4ED8"/>
+    </g>
+  <polygon points="268,40 332,40 332,72 300,92 268,72" fill="#60A5FA"></polygon>
+  <text x="300" y="70" text-anchor="middle" font-family="'Archivo Black','Arial Black',sans-serif" font-weight="900" font-size="26" fill="#0D0F14">IV</text>
+  <text x="300" y="100" text-anchor="middle" font-family="'Barlow',Arial,sans-serif" font-weight="700" font-size="16" letter-spacing="3" fill="#7A828F">CLIMBING ADDICTS</text>
+  <g fill="#60A5FA">
+    <circle cx="210" cy="436" r="8" fill="#60A5FA"/>
+    <circle cx="246" cy="436" r="8" fill="#60A5FA"/>
+    <circle cx="282" cy="436" r="8" fill="#60A5FA"/>
+    <circle cx="318" cy="436" r="8" fill="#60A5FA"/>
+    <circle cx="354" cy="436" r="8" fill="#2E333D"/>
+    <circle cx="390" cy="436" r="8" fill="#2E333D"/>
+  </g>
+  <g font-family="'Archivo Black','Arial Black',sans-serif" font-weight="900" text-anchor="middle">
+    <text transform="translate(300,646) scale(0.82,1)" font-size="64" letter-spacing="2" fill="#FFFFFF">GENTIANE</text>
+    <text transform="translate(300,700) scale(0.82,1)" font-size="30" letter-spacing="2" fill="#60A5FA">NIVEAU IV — PERFORMANCE</text>
+  </g>
+  <text x="300" y="736" text-anchor="middle" font-family="'Barlow',Arial,sans-serif" font-size="23" font-weight="600" letter-spacing="1" fill="#7A828F">150 voies • 1× 6c</text>
+</svg>

@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 760" width="600" height="760" role="img" aria-label="Badge EDELWEISS — Climbing Addicts">
+  <defs>
+    <clipPath id="clip-06edelweiss">
+      <polygon points="96,60 504,60 504,338 300,536 96,338"></polygon>
+    </clipPath>
+  </defs>
+  <rect width="600" height="760" fill="#0D0F14"></rect>
+  <polygon points="96,60 504,60 504,338 300,536 96,338" fill="#161A21"></polygon>
+  <g clip-path="url(#clip-06edelweiss)">
+    <polygon points="88,412 88,286 156,196 214,268 268,186 330,268 396,168 460,254 512,198 512,412" fill="#39404C"></polygon>
+    <polygon points="156,196 126,232 186,232" fill="#5B6474"></polygon>
+    <polygon points="268,186 238,222 298,222" fill="#5B6474"></polygon>
+    <polygon points="396,168 366,206 426,206" fill="#5B6474"></polygon>
+    <polygon points="88,412 88,300 156,196 214,268 186,412" fill="#2A303A"></polygon>
+    <polygon points="268,186 330,268 396,168 372,412 232,412" fill="#252A34"></polygon>
+    <polygon points="396,168 460,254 512,198 512,412 430,412" fill="#2E333D"></polygon>
+    <polygon points="88,412 512,412 512,540 88,540" fill="#1C2028"></polygon>
+    <polygon points="132,124 150,152 114,152" fill="#2DD4BF" opacity="0.55"></polygon>
+    <polygon points="472,330 488,356 456,356" fill="#2DD4BF" opacity="0.4"></polygon>
+  </g>
+  <polygon points="96,60 504,60 504,338 300,536 96,338" fill="none" stroke="#FFD166" stroke-width="9" stroke-linejoin="miter"></polygon>
+  <g transform="translate(300,285) scale(1.8) translate(-300,-285)">
+      <polygon points="300,320 250,338 256,350 300,334" fill="#5E7D6F"/>
+      <polygon points="300,320 350,338 344,350 300,334" fill="#8AA393"/>
+      <polygon points="300,168 318,224 376,202 340,248 396,268 336,282 352,340 306,306 300,364 294,306 248,340 264,282 204,268 260,248 224,202 282,224" fill="#EDEBE3"/>
+      <polygon points="300,168 318,224 376,202 340,248 396,268 336,282 352,340 306,306 300,364 300,168" fill="#C9C5B8"/>
+      <polygon points="300,218 310,244 338,240 318,258 326,286 300,270 274,286 282,258 262,240 290,244" fill="#FFFFFF"/>
+      <polygon points="300,218 310,244 338,240 318,258 326,286 300,270 300,218" fill="#E2DFD4"/>
+      <circle cx="292" cy="264" r="8" fill="#FFC53D"/><circle cx="308" cy="264" r="8" fill="#FFB800"/><circle cx="300" cy="254" r="8" fill="#FFD166"/>
+      <circle cx="300" cy="268" r="4" fill="#B04E0A"/>
+    </g>
+  <polygon points="268,40 332,40 332,72 300,92 268,72" fill="#FFD166"></polygon>
+  <text x="300" y="70" text-anchor="middle" font-family="'Archivo Black','Arial Black',sans-serif" font-weight="900" font-size="26" fill="#0D0F14">VI</text>
+  <text x="300" y="100" text-anchor="middle" font-family="'Barlow',Arial,sans-serif" font-weight="700" font-size="16" letter-spacing="3" fill="#7A828F">CLIMBING ADDICTS</text>
+  <g fill="#FFD166">
+    <circle cx="210" cy="436" r="8" fill="#FFD166"/>
+    <circle cx="246" cy="436" r="8" fill="#FFD166"/>
+    <circle cx="282" cy="436" r="8" fill="#FFD166"/>
+    <circle cx="318" cy="436" r="8" fill="#FFD166"/>
+    <circle cx="354" cy="436" r="8" fill="#FFD166"/>
+    <circle cx="390" cy="436" r="8" fill="#FFD166"/>
+  </g>
+  <g font-family="'Archivo Black','Arial Black',sans-serif" font-weight="900" text-anchor="middle">
+    <text transform="translate(300,646) scale(0.82,1)" font-size="64" letter-spacing="2" fill="#FFFFFF">EDELWEISS</text>
+    <text transform="translate(300,700) scale(0.82,1)" font-size="30" letter-spacing="2" fill="#FFD166">NIVEAU VI — LÉGENDE</text>
+  </g>
+  <text x="300" y="736" text-anchor="middle" font-family="'Barlow',Arial,sans-serif" font-size="23" font-weight="600" letter-spacing="1" fill="#7A828F">600 voies • 1× 7c</text>
+</svg>

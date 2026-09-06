@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 760" width="600" height="760" role="img" aria-label="Badge CROCUS — Climbing Addicts">
+  <defs>
+    <clipPath id="clip-02crocus">
+      <polygon points="96,60 504,60 504,338 300,536 96,338"></polygon>
+    </clipPath>
+  </defs>
+  <rect width="600" height="760" fill="#0D0F14"></rect>
+  <polygon points="96,60 504,60 504,338 300,536 96,338" fill="#161A21"></polygon>
+  <g clip-path="url(#clip-02crocus)">
+    <polygon points="88,412 88,286 156,196 214,268 268,186 330,268 396,168 460,254 512,198 512,412" fill="#39404C"></polygon>
+    <polygon points="156,196 126,232 186,232" fill="#5B6474"></polygon>
+    <polygon points="268,186 238,222 298,222" fill="#5B6474"></polygon>
+    <polygon points="396,168 366,206 426,206" fill="#5B6474"></polygon>
+    <polygon points="88,412 88,300 156,196 214,268 186,412" fill="#2A303A"></polygon>
+    <polygon points="268,186 330,268 396,168 372,412 232,412" fill="#252A34"></polygon>
+    <polygon points="396,168 460,254 512,198 512,412 430,412" fill="#2E333D"></polygon>
+    <polygon points="88,412 512,412 512,540 88,540" fill="#1C2028"></polygon>
+    <polygon points="132,124 150,152 114,152" fill="#2DD4BF" opacity="0.55"></polygon>
+    <polygon points="472,330 488,356 456,356" fill="#2DD4BF" opacity="0.4"></polygon>
+  </g>
+  <polygon points="96,60 504,60 504,338 300,536 96,338" fill="none" stroke="#A78BFA" stroke-width="9" stroke-linejoin="miter"></polygon>
+  <g transform="translate(300,285) scale(1.8) translate(-300,-285)">
+      <polygon points="300,330 240,336 236,348 300,344" fill="#2B7A4F"/>
+      <polygon points="300,330 360,336 364,348 300,344" fill="#3F9D6B"/>
+      <polygon points="298,344 292,380 296,400 302,380" fill="#3F9D6B"/>
+      <polygon points="262,210 252,280 278,330 292,330 284,260" fill="#6D4AC8"/>
+      <polygon points="338,210 348,280 322,330 308,330 316,260" fill="#6D4AC8"/>
+      <polygon points="300,200 278,260 284,330 300,336 316,330 322,260" fill="#A78BFA"/>
+      <polygon points="300,200 322,260 316,330 300,336 300,200" fill="#8B6FF0"/>
+      <polygon points="282,250 292,250 290,290 280,290" fill="#7C5CD6"/>
+      <polygon points="308,250 318,250 320,290 310,290" fill="#7C5CD6"/>
+      <polygon points="300,268 297,300 303,300" fill="#FF7A1A"/>
+      <polygon points="294,272 288,296 292,298 297,276" fill="#FFA45C"/>
+      <polygon points="306,272 312,296 308,298 303,276" fill="#FFA45C"/>
+      <circle cx="300" cy="306" r="7" fill="#FFD166"/>
+    </g>
+  <polygon points="268,40 332,40 332,72 300,92 268,72" fill="#A78BFA"></polygon>
+  <text x="300" y="70" text-anchor="middle" font-family="'Archivo Black','Arial Black',sans-serif" font-weight="900" font-size="26" fill="#0D0F14">II</text>
+  <text x="300" y="100" text-anchor="middle" font-family="'Barlow',Arial,sans-serif" font-weight="700" font-size="16" letter-spacing="3" fill="#7A828F">CLIMBING ADDICTS</text>
+  <g fill="#A78BFA">
+    <circle cx="210" cy="436" r="8" fill="#A78BFA"/>
+    <circle cx="246" cy="436" r="8" fill="#A78BFA"/>
+    <circle cx="282" cy="436" r="8" fill="#2E333D"/>
+    <circle cx="318" cy="436" r="8" fill="#2E333D"/>
+    <circle cx="354" cy="436" r="8" fill="#2E333D"/>
+    <circle cx="390" cy="436" r="8" fill="#2E333D"/>
+  </g>
+  <g font-family="'Archivo Black','Arial Black',sans-serif" font-weight="900" text-anchor="middle">
+    <text transform="translate(300,646) scale(0.82,1)" font-size="64" letter-spacing="2" fill="#FFFFFF">CROCUS</text>
+    <text transform="translate(300,700) scale(0.82,1)" font-size="30" letter-spacing="2" fill="#A78BFA">NIVEAU II — ASSIDUITÉ</text>
+  </g>
+  <text x="300" y="736" text-anchor="middle" font-family="'Barlow',Arial,sans-serif" font-size="23" font-weight="600" letter-spacing="1" fill="#7A828F">25 voies • 5 sessions</text>
+</svg>

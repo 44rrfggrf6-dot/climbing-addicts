@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Badges Fleurs de Montagne — Climbing Addicts</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<style>
+.badges-hero{padding:calc(var(--header-h) + 48px) 0 24px;text-align:center}
+.badges-hero p{color:var(--fg-muted);max-width:720px;margin:16px auto 0;font-size:1.1rem}
+.badges-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;padding:40px 0 24px}
+.badge-card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;transition:all var(--transition)}
+.badge-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);border-color:var(--border-light)}
+.badge-card img{width:100%;height:auto;display:block;background:#0D0F14}
+.badge-body{padding:20px 22px 24px}
+.badge-body h3{font-size:1.6rem;margin-bottom:4px}
+.badge-crit{color:var(--fg-muted);font-size:.95rem;margin:8px 0 12px}
+.badge-tag{display:inline-block;font-size:.75rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:6px 12px;border-radius:999px;border:1px solid var(--border-light);color:var(--fg-muted)}
+.rules{padding:24px 0 80px}
+.rules-table{width:100%;border-collapse:collapse;background:var(--bg-elevated);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;font-size:.95rem}
+.rules-table th,.rules-table td{text-align:left;padding:14px 18px;border-bottom:1px solid var(--border)}
+.rules-table th{font-family:'Bebas Neue';letter-spacing:.06em;color:var(--fg-muted);font-weight:400}
+.rules-table tr:last-child td{border-bottom:none}
+.dot{display:inline-block;width:12px;height:12px;border-radius:50%;margin-right:8px;vertical-align:baseline}
+code{background:var(--bg-card);padding:2px 8px;border-radius:6px;font-size:.85em}
+</style>
+</head>
+<body>
+<header class="hero"><div class="container">
+<a href="index.html" class="logo"><img src="assets/images/climbing-addicts-logo.svg" alt="" width="48" height="48"><span class="logo-text"><span class="logo-climbing">CLIMBING</span><span class="logo-addicts">ADDICTS</span></span></a>
+<nav class="nav"><a href="index.html" class="nav-link">Accueil</a><a href="#systeme" class="nav-link">Système</a></nav>
+</div></header>
+<main class="container">
+<section class="badges-hero">
+<h1>Badges Fleurs de Montagne</h1>
+<p>6 écussons progressifs, du premier pas en salle jusqu'au mythe. Même base visuelle que ton écusson <code>forme-option-b</code> : fond <code>#161A21</code>, montagnes low-poly, bordure 9px teintée par rareté, typo Archivo Black / Bebas.</p>
+</section>
+<section class="badges-grid">
+<article class="badge-card"><img src="assets/images/badges/badge-01-perce-neige.svg" alt="Badge Perce-Neige"><div class="badge-body"><span class="badge-tag">I — Découverte</span><h3>Perce-Neige</h3><p class="badge-crit">Blanche, première à percer la neige = première voie. <strong>1 voie enregistrée.</strong></p></div></article>
+<article class="badge-card"><img src="assets/images/badges/badge-02-crocus.svg" alt="Badge Crocus"><div class="badge-body"><span class="badge-tag">II — Assiduité</span><h3>Crocus</h3><p class="badge-crit">Violet, revient chaque printemps = régularité. <strong>25 voies • 5 sessions.</strong></p></div></article>
+<article class="badge-card"><img src="assets/images/badges/badge-03-campanule.svg" alt="Badge Campanule"><div class="badge-body"><span class="badge-tag">III — Technique</span><h3>Campanule</h3><p class="badge-crit">Cloche teal, la gestuelle sonne juste. <strong>50 voies • 1× 6a.</strong></p></div></article>
+<article class="badge-card"><img src="assets/images/badges/badge-04-gentiane.svg" alt="Badge Gentiane"><div class="badge-body"><span class="badge-tag">IV — Performance</span><h3>Gentiane</h3><p class="badge-crit">Bleue d'altitude, amère et forte. <strong>150 voies • 1× 6c.</strong></p></div></article>
+<article class="badge-card"><img src="assets/images/badges/badge-05-rhododendron.svg" alt="Badge Rhododendron"><div class="badge-body"><span class="badge-tag">V — Endurance</span><h3>Rhododendron</h3><p class="badge-crit">Rose des Alpes, buisson qui tient l'hiver. <strong>300 voies • 1× 7a.</strong></p></div></article>
+<article class="badge-card"><img src="assets/images/badges/badge-06-edelweiss.svg" alt="Badge Edelweiss"><div class="badge-body"><span class="badge-tag">VI — Légende</span><h3>Edelweiss</h3><p class="badge-crit">Reine protégée des sommets. <strong>600 voies • 1× 7c.</strong> Bordure or.</p></div></article>
+</section>
+<section id="systeme" class="rules">
+<header class="section-header"><h2>Règles de progression</h2><p>Cumulatif : chaque fleur garde les précédentes. Dots 1→6 sur l'écusson.</p></header>
+<table class="rules-table">
+<thead><tr><th>Badge</th><th>Couleur bordure</th><th>Déblocage</th><th>Fichier</th></tr></thead>
+<tbody>
+<tr><td><span class="dot" style="background:#9AA3B2"></span>I — Perce-Neige</td><td><code>#9AA3B2</code> gris</td><td>1 voie loggée</td><td><code>badge-01-perce-neige.svg</code></td></tr>
+<tr><td><span class="dot" style="background:#A78BFA"></span>II — Crocus</td><td><code>#A78BFA</code> violet</td><td>25 voies + 5 sessions</td><td><code>badge-02-crocus.svg</code></td></tr>
+<tr><td><span class="dot" style="background:#2DD4BF"></span>III — Campanule</td><td><code>#2DD4BF</code> teal app</td><td>50 voies + 1× 6a</td><td><code>badge-03-campanule.svg</code></td></tr>
+<tr><td><span class="dot" style="background:#60A5FA"></span>IV — Gentiane</td><td><code>#60A5FA</code> bleu</td><td>150 voies + 1× 6c</td><td><code>badge-04-gentiane.svg</code></td></tr>
+<tr><td><span class="dot" style="background:#FF7A1A"></span>V — Rhododendron</td><td><code>#FF7A1A</code> orange app</td><td>300 voies + 1× 7a</td><td><code>badge-05-rhododendron.svg</code></td></tr>
+<tr><td><span class="dot" style="background:#FFD166"></span>VI — Edelweiss</td><td><code>#FFD166</code> or</td><td>600 voies + 1× 7c</td><td><code>badge-06-edelweiss.svg</code></td></tr>
+</tbody>
+</table>
+<p style="color:var(--fg-muted);margin-top:20px">Design : écusson 600×760, polygone <code>96,60 504,60 504,338 300,536 96,338</code>, stroke 9px, médaillon romain en haut, nom + palier en bas. Fleurs en polygones plats 2 tons pour matcher la mascotte. Variante « verrouillée » : passer le <code>stroke</code> et le médaillon en <code>#2E333D</code> et la fleur en <code>opacity:.25</code>.</p>
+</section>
+</main>
+</body>
+</html>

@@ -4,58 +4,75 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Climbing Addicts — Track Your Climbing Progress</title>
-  <meta name="description" content="Log every boulder and rope climb: grades, attempts, styles and gyms. Snap a photo to identify the route and see exactly what to improve.">
+  <meta name="description" data-i18n-content="meta.description" content="Enregistrez chaque bloc et voie : cotations, essais, styles et salles. Prenez une photo pour identifier la voie et savoir exactement quoi améliorer.">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Climbing Addicts — Track Your Climbing Progress">
-  <meta property="og:description" content="Log every boulder and rope climb: grades, attempts, styles and gyms. Snap a photo to identify the route and see exactly what to improve.">
-  <meta property="og:image" content="assets/images/climbing-addicts-logo.svg">
+  <meta property="og:description" data-i18n-content="meta.description" content="Enregistrez chaque bloc et voie : cotations, essais, styles et salles. Prenez une photo pour identifier la voie et savoir exactement quoi améliorer.">
+  <meta property="og:image" content="assets/images/logo-ecusson-notext.svg">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:locale:alternate" content="en_US">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Climbing Addicts — Track Your Climbing Progress">
-  <meta name="twitter:description" content="Log every boulder and rope climb: grades, attempts, styles and gyms. Snap a photo to identify the route and see exactly what to improve.">
-  <meta name="twitter:image" content="assets/images/climbing-addicts-logo.svg">
+  <meta name="twitter:description" data-i18n-content="meta.description" content="Enregistrez chaque bloc et voie : cotations, essais, styles et salles. Prenez une photo pour identifier la voie et savoir exactement quoi améliorer.">
+  <meta name="twitter:image" content="assets/images/logo-ecusson-notext.svg">
+  <!-- SEO multilingue : adapter le domaine en prod. ?lang=fr|en est la source de vérité côté JS. -->
+  <link rel="alternate" hreflang="fr" href="./index.html?lang=fr">
+  <link rel="alternate" hreflang="en" href="./index.html?lang=en">
+  <link rel="alternate" hreflang="x-default" href="./index.html?lang=fr">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+  <link rel="manifest" href="assets/site.webmanifest">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <header class="hero">
+  <header class="header">
     <div class="container">
       <a href="#" class="logo" aria-label="Climbing Addicts Home">
-        <img src="assets/images/climbing-addicts-logo.svg" alt="" width="120" height="120">
+        <img src="assets/images/logo-ecusson-notext.svg" alt="" width="64" height="70">
         <span class="logo-text">
           <span class="logo-climbing">CLIMBING</span>
           <span class="logo-addicts">ADDICTS</span>
         </span>
       </a>
-      <nav class="nav">
-        <a href="#features" class="nav-link">Fonctionnalités</a>
-        <a href="#download" class="nav-link btn-primary">Télécharger</a>
-      </nav>
+      <div class="header-actions">
+        <nav class="nav">
+          <a href="#features" class="nav-link" data-i18n="nav.features">Fonctionnalités</a>
+          <a href="blog/" class="nav-link" data-i18n="nav.blog">Blog</a>
+          <a href="#download" class="nav-link btn-primary" data-i18n="nav.download">Télécharger</a>
+        </nav>
+        <div class="lang-switcher" role="group" aria-label="Language / Langue">
+          <button type="button" data-lang="fr" aria-pressed="true">FR</button>
+          <button type="button" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+      </div>
     </div>
   </header>
 
   <main>
     <section class="hero-main">
       <div class="container">
-        <h1>Track Every Climb.<br>Progress Faster.</h1>
-        <p class="hero-subtitle">Log every boulder and rope climb: grades, attempts, styles and gyms. Snap a photo to identify the route and see exactly what to improve.</p>
+        <h1 data-i18n="hero.title" data-i18n-html>Track Every Climb.<br>Progress Faster.</h1>
+        <p class="hero-subtitle" data-i18n="hero.subtitle">Enregistrez chaque bloc et voie : cotations, essais, styles et salles. Prenez une photo pour identifier la voie et savoir exactement quoi améliorer.</p>
         <div class="hero-cta">
-          <a href="#download" class="btn btn-lg btn-primary">Commencer gratuitement</a>
-          <a href="#features" class="btn btn-lg btn-secondary">Voir les fonctionnalités</a>
+          <a href="#download" class="btn btn-lg btn-primary" data-i18n="hero.cta.primary">Commencer gratuitement</a>
+          <a href="#features" class="btn btn-lg btn-secondary" data-i18n="hero.cta.secondary">Voir les fonctionnalités</a>
         </div>
         <div class="hero-stats">
           <div class="stat">
             <span class="stat-value">50k+</span>
-            <span class="stat-label">Grimpes enregistrées</span>
+            <span class="stat-label" data-i18n="hero.stats.1">Grimpes enregistrées</span>
           </div>
           <div class="stat">
             <span class="stat-value">200+</span>
-            <span class="stat-label">Salles partenaires</span>
+            <span class="stat-label" data-i18n="hero.stats.2">Salles partenaires</span>
           </div>
           <div class="stat">
             <span class="stat-value">4.9★</span>
-            <span class="stat-label">Note App Store</span>
+            <span class="stat-label" data-i18n="hero.stats.3">Note App Store</span>
           </div>
         </div>
       </div>
@@ -64,37 +81,37 @@
     <section id="features" class="features">
       <div class="container">
         <header class="section-header">
-          <h2>Tout pour progresser</h2>
-          <p>Des outils pensés par des grimpeurs, pour des grimpeurs.</p>
+          <h2 data-i18n="features.title">Tout pour progresser</h2>
+          <p data-i18n="features.subtitle">Des outils pensés par des grimpeurs, pour des grimpeurs.</p>
         </header>
         <div class="features-grid">
           <article class="feature-card">
             <div class="feature-icon">
               <img src="assets/images/climbing-addicts-badge.svg" alt="" width="48" height="48">
             </div>
-            <h3>Carnet d'escalade complet</h3>
-            <p>Enregistrez chaque essai : cotation, style (flash, essai, travail), type de voie, salle. Filtrez et analysez votre progression.</p>
+            <h3 data-i18n="features.1.title">Carnet d'escalade complet</h3>
+            <p data-i18n="features.1.text">Enregistrez chaque essai : cotation, style (flash, essai, travail), type de voie, salle. Filtrez et analysez votre progression.</p>
           </article>
           <article class="feature-card">
             <div class="feature-icon">
               <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><circle cx="15.5" cy="8.5" r="1.5"></circle><path d="M3 14h18"></path></svg>
             </div>
-            <h3>Reconnaissance photo</h3>
-            <p>Prenez en photo une voie ou un bloc : l'app identifie la cotation, le style et vous suggère les points à travailler.</p>
+            <h3 data-i18n="features.2.title">Reconnaissance photo</h3>
+            <p data-i18n="features.2.text">Prenez en photo une voie ou un bloc : l'app identifie la cotation, le style et vous suggère les points à travailler.</p>
           </article>
           <article class="feature-card">
             <div class="feature-icon">
               <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M21 10V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h4"></path><polyline points="14 2 18 6 10 14"></polyline><line x1="16" y1="12" x2="16" y2="8"></line><line x1="12" y1="16" x2="8" y2="12"></line></svg>
             </div>
-            <h3>Stats & analyses</h3>
-            <p>Visualisez votre évolution : pyramides de cotations, heatmap des styles, progression par salle, comparaison dans le temps.</p>
+            <h3 data-i18n="features.3.title">Stats & analyses</h3>
+            <p data-i18n="features.3.text">Visualisez votre évolution : pyramides de cotations, heatmap des styles, progression par salle, comparaison dans le temps.</p>
           </article>
           <article class="feature-card">
             <div class="feature-icon">
               <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
             </div>
-            <h3>Communauté & défis</h3>
-            <p>Rejoignez des défis mensuels, partagez vos projets, motivez-vous entre amis. La grimpe c'est mieux ensemble.</p>
+            <h3 data-i18n="features.4.title">Communauté & défis</h3>
+            <p data-i18n="features.4.text">Rejoignez des défis mensuels, partagez vos projets, motivez-vous entre amis. La grimpe c’est mieux ensemble.</p>
           </article>
         </div>
       </div>
@@ -104,21 +121,21 @@
       <div class="container">
         <div class="download-content">
           <div class="download-text">
-            <h2>Prêt à grimper plus fort ?</h2>
-            <p>Disponible sur iOS et Android. Synchronisation cloud, mode hors-ligne, export de données.</p>
+            <h2 data-i18n="download.title">Prêt à grimper plus fort ?</h2>
+            <p data-i18n="download.text">Disponible sur iOS et Android. Synchronisation cloud, mode hors-ligne, export de données.</p>
             <div class="store-buttons">
-              <a href="#" class="store-btn" aria-label="Télécharger sur l'App Store">
+              <a href="#" class="store-btn" data-i18n-aria-label="download.aria.appstore" aria-label="Télécharger sur l'App Store">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 6.53c-.62-.62-1.71-.62-2.33 0L11 11.33 7.61 7.95c-.62-.62-1.71-.62-2.33 0s-.62 1.71 0 2.33l4 4c.31.31.71.31 1.02 0l8-8c.62-.63.62-1.71 0-2.34z"></path></svg>
                 <span>App Store</span>
               </a>
-              <a href="#" class="store-btn" aria-label="Télécharger sur Google Play">
+              <a href="#" class="store-btn" data-i18n-aria-label="download.aria.play" aria-label="Télécharger sur Google Play">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"></path></svg>
                 <span>Google Play</span>
               </a>
             </div>
           </div>
           <div class="download-phone">
-            <img src="assets/images/climbing-addicts-logo-light.svg" alt="Aperçu de l'application Climbing Addicts" width="280">
+            <img src="assets/images/climbing-addicts-logo-light.svg" data-i18n-alt="download.alt" alt="Aperçu de l'application Climbing Addicts" width="280">
           </div>
         </div>
       </div>
@@ -130,44 +147,49 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <a href="#" class="logo">
-            <img src="assets/images/climbing-addicts-badge.svg" alt="" width="40" height="40">
+            <img src="assets/images/favicon.svg" alt="" width="40" height="40">
             <span>Climbing Addicts</span>
           </a>
-          <p>L'app pour grimpeurs qui veulent progresser.</p>
+          <p data-i18n="footer.tagline">L’app pour grimpeurs qui veulent progresser.</p>
+          <div class="lang-switcher" role="group" aria-label="Language / Langue" style="margin-top:16px">
+            <button type="button" data-lang="fr" aria-pressed="true">FR</button>
+            <button type="button" data-lang="en" aria-pressed="false">EN</button>
+          </div>
         </div>
         <nav class="footer-nav">
-          <h4>Produit</h4>
+          <h4 data-i18n="footer.product">Produit</h4>
           <ul>
-            <li><a href="#features">Fonctionnalités</a></li>
-            <li><a href="#">Tarifs</a></li>
-            <li><a href="#">Télécharger</a></li>
-            <li><a href="#">Changelog</a></li>
+            <li><a href="#features" data-i18n="footer.product.features">Fonctionnalités</a></li>
+            <li><a href="#" data-i18n="footer.product.pricing">Tarifs</a></li>
+            <li><a href="#" data-i18n="footer.product.download">Télécharger</a></li>
+            <li><a href="#" data-i18n="footer.product.changelog">Changelog</a></li>
           </ul>
         </nav>
         <nav class="footer-nav">
-          <h4>Communauté</h4>
+          <h4 data-i18n="footer.community">Communauté</h4>
           <ul>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Défis</a></li>
-            <li><a href="#">Salles partenaires</a></li>
-            <li><a href="#">Ambassadeurs</a></li>
+            <li><a href="blog/" data-i18n="footer.community.blog">Blog</a></li>
+            <li><a href="#" data-i18n="footer.community.challenges">Défis</a></li>
+            <li><a href="#" data-i18n="footer.community.gyms">Salles partenaires</a></li>
+            <li><a href="#" data-i18n="footer.community.ambassadors">Ambassadeurs</a></li>
           </ul>
         </nav>
         <nav class="footer-nav">
-          <h4>Légal</h4>
+          <h4 data-i18n="footer.legal">Légal</h4>
           <ul>
-            <li><a href="#">Confidentialité</a></li>
-            <li><a href="#">CGU</a></li>
-            <li><a href="#">Cookies</a></li>
+            <li><a href="#" data-i18n="footer.legal.privacy">Confidentialité</a></li>
+            <li><a href="#" data-i18n="footer.legal.terms">CGU</a></li>
+            <li><a href="#" data-i18n="footer.legal.cookies">Cookies</a></li>
           </ul>
         </nav>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2025 Climbing Addicts. Tous droits réservés.</p>
+        <p data-i18n="footer.rights">© 2025 Climbing Addicts. Tous droits réservés.</p>
       </div>
     </div>
   </footer>
 
+  <script src="assets/js/i18n.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 </html>

@@ -5,6 +5,7 @@
   let lastScroll = 0;
 
   function onScroll() {
+    if (!header) return;
     const currentScroll = window.scrollY;
     if (currentScroll > 100) {
       header.style.background = 'rgba(13,15,20,.95)';
@@ -23,7 +24,7 @@
       const target = document.querySelector(targetId);
       if (target) {
         e.preventDefault();
-        const offset = header.offsetHeight;
+        const offset = header ? header.offsetHeight : 72;
         const targetPos = target.getBoundingClientRect().top + window.scrollY - offset;
         window.scrollTo({ top: targetPos, behavior: 'smooth' });
       }

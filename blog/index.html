@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blog — Climbing Addicts</title>
+  <meta name="description" data-i18n-content="meta.description" content="Conseils entraînement, technique, matos et récits de grimpe.">
+  <link rel="alternate" hreflang="fr" href="./index.html?lang=fr">
+  <link rel="alternate" hreflang="en" href="./index.html?lang=en">
+  <link rel="alternate" hreflang="x-default" href="./index.html?lang=fr">
+  <link rel="icon" type="image/svg+xml" href="../assets/images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <style>
+    .blog-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; padding: 40px 0 100px; }
+    .blog-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 28px; }
+    .blog-card .tag { display: inline-block; font-size: .75rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--accent); margin-bottom: 12px; }
+    .blog-card h2 { font-size: 1.75rem; margin-bottom: 8px; }
+    .blog-card p { color: var(--fg-muted); margin-bottom: 16px; }
+    .blog-card a.read { color: var(--accent); font-weight: 600; }
+    .blog-hero { padding: calc(var(--header-h) + 60px) 0 0; text-align: center; }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <a href="../index.html" class="logo" aria-label="Climbing Addicts Home">
+        <img src="../assets/images/logo-ecusson-notext.svg" alt="" width="48" height="52">
+        <span class="logo-text"><span class="logo-climbing">CLIMBING</span><span class="logo-addicts">ADDICTS</span></span>
+      </a>
+      <div class="header-actions">
+        <nav class="nav">
+          <a href="../index.html#features" class="nav-link" data-i18n="nav.features">Fonctionnalités</a>
+          <a href="./" class="nav-link" data-i18n="nav.blog">Blog</a>
+          <a href="../index.html#download" class="nav-link btn-primary" data-i18n="nav.download">Télécharger</a>
+        </nav>
+        <div class="lang-switcher" role="group" aria-label="Language / Langue">
+          <button type="button" data-lang="fr" aria-pressed="true">FR</button>
+          <button type="button" data-lang="en" aria-pressed="false">EN</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="blog-hero">
+      <h1 data-i18n="blog.title">Blog</h1>
+      <p class="hero-subtitle" data-i18n="blog.subtitle">Conseils entraînement, technique, matos et récits de grimpe.</p>
+    </div>
+
+    <div class="blog-list">
+      <!-- Exemple FR -->
+      <article class="blog-card" data-lang-article="fr">
+        <span class="tag">Entraînement</span>
+        <h2>Progresser en bloc : la règle des 3 essais</h2>
+        <p>Comment structurer vos séances pour passer de 6A à 6C sans vous blesser…</p>
+        <a class="read" href="#" data-i18n="blog.read">Lire l’article</a>
+      </article>
+      <!-- Exemple EN -->
+      <article class="blog-card" data-lang-article="en">
+        <span class="tag">Training</span>
+        <h2>Bouldering progress: the 3-try rule</h2>
+        <p>How to structure your sessions to go from V3 to V5 without getting injured…</p>
+        <a class="read" href="#" data-i18n="blog.read">Lire l’article</a>
+      </article>
+    </div>
+    <p data-blog-empty hidden style="text-align:center;color:var(--fg-muted);padding-bottom:80px" data-i18n="blog.empty">Aucun article dans cette langue pour le moment — revenez bientôt.</p>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom" style="border:none;padding-top:0">
+        <p><a href="../index.html" data-i18n="blog.back">← Retour au blog</a></p>
+      </div>
+      <div class="footer-bottom">
+        <p data-i18n="footer.rights">© 2025 Climbing Addicts. Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/i18n.js"></script>
+</body>
+</html>

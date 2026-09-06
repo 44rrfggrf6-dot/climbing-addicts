@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 760" width="600" height="760" role="img" aria-label="Badge RHODODENDRON — Climbing Addicts">
+  <defs>
+    <clipPath id="clip-05rhododendron">
+      <polygon points="96,60 504,60 504,338 300,536 96,338"></polygon>
+    </clipPath>
+  </defs>
+  <rect width="600" height="760" fill="#0D0F14"></rect>
+  <polygon points="96,60 504,60 504,338 300,536 96,338" fill="#161A21"></polygon>
+  <g clip-path="url(#clip-05rhododendron)">
+    <polygon points="88,412 88,286 156,196 214,268 268,186 330,268 396,168 460,254 512,198 512,412" fill="#39404C"></polygon>
+    <polygon points="156,196 126,232 186,232" fill="#5B6474"></polygon>
+    <polygon points="268,186 238,222 298,222" fill="#5B6474"></polygon>
+    <polygon points="396,168 366,206 426,206" fill="#5B6474"></polygon>
+    <polygon points="88,412 88,300 156,196 214,268 186,412" fill="#2A303A"></polygon>
+    <polygon points="268,186 330,268 396,168 372,412 232,412" fill="#252A34"></polygon>
+    <polygon points="396,168 460,254 512,198 512,412 430,412" fill="#2E333D"></polygon>
+    <polygon points="88,412 512,412 512,540 88,540" fill="#1C2028"></polygon>
+    <polygon points="132,124 150,152 114,152" fill="#2DD4BF" opacity="0.55"></polygon>
+    <polygon points="472,330 488,356 456,356" fill="#2DD4BF" opacity="0.4"></polygon>
+  </g>
+  <polygon points="96,60 504,60 504,338 300,536 96,338" fill="none" stroke="#FF7A1A" stroke-width="9" stroke-linejoin="miter"></polygon>
+  <g transform="translate(300,285) scale(1.8) translate(-300,-285)">
+      <polygon points="300,300 296,340 304,340" fill="#3F9D6B"/>
+      <polygon points="298,316 248,330 254,342 299,328" fill="#2B7A4F"/>
+      <polygon points="302,316 352,330 346,342 301,328" fill="#3F9D6B"/>
+      <ellipse cx="262" cy="252" rx="42" ry="44" fill="#F472A6"/>
+      <ellipse cx="338" cy="252" rx="42" ry="44" fill="#DB3A7A"/>
+      <ellipse cx="300" cy="226" rx="44" ry="46" fill="#F9A8C9"/>
+      <ellipse cx="272" cy="296" rx="42" ry="40" fill="#F472A6"/>
+      <ellipse cx="328" cy="296" rx="42" ry="40" fill="#E14E86"/>
+      <ellipse cx="300" cy="272" rx="34" ry="32" fill="#FCE7F1"/>
+      <circle cx="288" cy="266" r="4" fill="#DB3A7A"/><circle cx="300" cy="262" r="4" fill="#DB3A7A"/><circle cx="312" cy="266" r="4" fill="#DB3A7A"/>
+      <circle cx="293" cy="276" r="4" fill="#DB3A7A"/><circle cx="307" cy="276" r="4" fill="#DB3A7A"/>
+      <polygon points="300,258 298,282 302,282" fill="#FFD166"/>
+      <circle cx="300" cy="254" r="7" fill="#FFD166" stroke="#E86A12" stroke-width="2"/>
+    </g>
+  <polygon points="268,40 332,40 332,72 300,92 268,72" fill="#FF7A1A"></polygon>
+  <text x="300" y="70" text-anchor="middle" font-family="'Archivo Black','Arial Black',sans-serif" font-weight="900" font-size="26" fill="#0D0F14">V</text>
+  <text x="300" y="100" text-anchor="middle" font-family="'Barlow',Arial,sans-serif" font-weight="700" font-size="16" letter-spacing="3" fill="#7A828F">CLIMBING ADDICTS</text>
+  <g fill="#FF7A1A">
+    <circle cx="210" cy="436" r="8" fill="#FF7A1A"/>
+    <circle cx="246" cy="436" r="8" fill="#FF7A1A"/>
+    <circle cx="282" cy="436" r="8" fill="#FF7A1A"/>
+    <circle cx="318" cy="436" r="8" fill="#FF7A1A"/>
+    <circle cx="354" cy="436" r="8" fill="#FF7A1A"/>
+    <circle cx="390" cy="436" r="8" fill="#2E333D"/>
+  </g>
+  <g font-family="'Archivo Black','Arial Black',sans-serif" font-weight="900" text-anchor="middle">
+    <text transform="translate(300,646) scale(0.82,1)" font-size="52" letter-spacing="2" fill="#FFFFFF">RHODODENDRON</text>
+    <text transform="translate(300,700) scale(0.82,1)" font-size="30" letter-spacing="2" fill="#FF7A1A">NIVEAU V — ENDURANCE</text>
+  </g>
+  <text x="300" y="736" text-anchor="middle" font-family="'Barlow',Arial,sans-serif" font-size="23" font-weight="600" letter-spacing="1" fill="#7A828F">300 voies • 1× 7a</text>
+</svg>
