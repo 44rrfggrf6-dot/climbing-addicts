@@ -2,6 +2,19 @@
 
 Site vitrine statique pour **Climbing Addicts**, l'app d'escalade pour tracker sa progression.
 
+## Déploiement actuel
+
+- Repo GitHub : https://github.com/44rrfggrf6-dot/climbing-addicts (public)
+- Hébergement : Cloudflare Pages, projet `climbing-addicts`
+- URL live : https://climbing-addicts.pages.dev
+- Déploiement manuel : `wrangler pages deploy . --project-name=climbing-addicts`
+  (pas encore de déploiement auto sur push — à connecter dans le dashboard
+  Cloudflare Pages : Settings → Builds & deployments → Connect to Git, si souhaité)
+
+Note : ce site vitrine est volontairement **séparé** de l'app fonctionnelle
+(voir le repo `climb-addicts-app` / https://climbingaddicts.app), pas de lien
+croisé entre les deux pour l'instant.
+
 ## Structure
 
 ```
