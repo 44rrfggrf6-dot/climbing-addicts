@@ -20,6 +20,7 @@
       'nav.features': 'Fonctionnalités',
       'nav.blog': 'Blog',
       'nav.download': 'Télécharger',
+      'nav.signin': 'Se connecter',
       'hero.title': 'Track Every Climb.<br>Progress Faster.',
       'hero.subtitle': 'Enregistrez chaque bloc et voie : cotations, essais, styles et salles. Prenez une photo pour identifier la voie et savoir exactement quoi améliorer.',
       'hero.cta.primary': 'Commencer gratuitement',
@@ -62,7 +63,22 @@
       'blog.title': 'Blog',
       'blog.subtitle': 'Conseils entraînement, technique, matos et récits de grimpe.',
       'blog.read': 'Lire l’article',
-      'blog.empty': 'Aucun article dans cette langue pour le moment — revenez bientôt.'
+      'blog.empty': 'Aucun article dans cette langue pour le moment — revenez bientôt.',
+      'auth.title.signin': 'Bon retour',
+      'auth.title.signup': 'Créer un compte',
+      'auth.label.email': 'Email',
+      'auth.label.password': 'Mot de passe',
+      'auth.label.confirm': 'Confirmer le mot de passe',
+      'auth.button.signin': 'Se connecter',
+      'auth.button.signup': 'Créer un compte',
+      'auth.divider': 'ou',
+      'auth.google': 'Continuer avec Google',
+      'auth.switch.toSignup.text': 'Nouveau ici ?',
+      'auth.switch.toSignup.link': 'Créer un compte',
+      'auth.switch.toSignin.text': 'Déjà un compte ?',
+      'auth.switch.toSignin.link': 'Se connecter',
+      'auth.note': "Cette page est une démo — elle n'est pas encore reliée à un vrai compte. Télécharge l'app pour créer le tien.",
+      'auth.demoMessage': "Fonctionnalité de démonstration : télécharge l'app pour créer un vrai compte."
     },
     en: {
       'meta.title': 'Climbing Addicts — Track Your Climbing Progress',
@@ -70,6 +86,7 @@
       'nav.features': 'Features',
       'nav.blog': 'Blog',
       'nav.download': 'Download',
+      'nav.signin': 'Sign in',
       'hero.title': 'Track Every Climb.<br>Progress Faster.',
       'hero.subtitle': 'Log every boulder and rope climb: grades, attempts, styles and gyms. Snap a photo to identify the route and see exactly what to improve.',
       'hero.cta.primary': 'Start for free',
@@ -112,7 +129,22 @@
       'blog.title': 'Blog',
       'blog.subtitle': 'Training tips, technique, gear and climbing stories.',
       'blog.read': 'Read article',
-      'blog.empty': 'No articles in this language yet — check back soon.'
+      'blog.empty': 'No articles in this language yet — check back soon.',
+      'auth.title.signin': 'Welcome back',
+      'auth.title.signup': 'Create an account',
+      'auth.label.email': 'Email',
+      'auth.label.password': 'Password',
+      'auth.label.confirm': 'Confirm password',
+      'auth.button.signin': 'Sign in',
+      'auth.button.signup': 'Create account',
+      'auth.divider': 'or',
+      'auth.google': 'Continue with Google',
+      'auth.switch.toSignup.text': 'New here?',
+      'auth.switch.toSignup.link': 'Create an account',
+      'auth.switch.toSignin.text': 'Already have an account?',
+      'auth.switch.toSignin.link': 'Sign in',
+      'auth.note': "This page is a demo — it isn't wired to a real account yet. Download the app to create yours.",
+      'auth.demoMessage': "Demo feature: download the app to create a real account."
     }
   };
 
