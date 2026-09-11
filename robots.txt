@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://climbing-addicts.pages.dev/sitemap.xml

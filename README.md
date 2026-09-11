@@ -15,6 +15,16 @@ Note : ce site vitrine est volontairement **séparé** de l'app fonctionnelle
 (voir le repo `climb-addicts-app` / https://climbingaddicts.app), pas de lien
 croisé entre les deux pour l'instant.
 
+## SEO multilingue (FR/EN)
+
+- `/` = français (x-default), `/en/` = anglais : contenu **pré-rendu en HTML brut**,
+  sans dépendance JS — Google indexe chaque langue séparément.
+- Blog : `/blog/` (FR) et `/en/blog/` (EN), un article par langue et par page.
+- `hreflang` croisés + `canonical` absolus sur les 4 pages, `sitemap.xml` + `robots.txt`.
+- `auth.html`, `badges.html`, `animations.html`, `logo-design.html` : `noindex`.
+- Règle de maintenance : tout texte ajouté en FR sur `/` ou `/blog/` doit être
+  traduit en miroir sur `/en/` ou `/en/blog/`.
+
 ## Structure
 
 ```
