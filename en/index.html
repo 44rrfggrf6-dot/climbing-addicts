@@ -3,19 +3,19 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Climbing Addicts — Track Your Climbing Progress</title>
-  <meta name="description" content="Log every boulder and rope climb: grades, attempts, styles and gyms. Snap a photo to identify the route and see exactly what to improve.">
+  <title>Climbing Addicts — Open beta: climbing progress logbook</title>
+  <meta name="description" content="Climbing Addicts is under construction: open web beta to log boulders and routes, track progress and climb with your crew. AI photo recognition is in development. Test it and share feedback.">
   <link rel="canonical" href="https://climbing-addicts.pages.dev/en/">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://climbing-addicts.pages.dev/en/">
-  <meta property="og:title" content="Climbing Addicts — Track Your Climbing Progress">
-  <meta property="og:description" content="Log every boulder and rope climb: grades, attempts, styles and gyms. Snap a photo to identify the route and see exactly what to improve.">
+  <meta property="og:title" content="Climbing Addicts — Open beta: climbing progress logbook">
+  <meta property="og:description" content="App under construction, open beta: route logbook, progression, crews. Photo AI in development. Your feedback drives the roadmap.">
   <meta property="og:image" content="https://climbing-addicts.pages.dev/assets/images/logo-ecusson-notext.svg">
   <meta property="og:locale" content="en_US">
   <meta property="og:locale:alternate" content="fr_FR">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Climbing Addicts — Track Your Climbing Progress">
-  <meta name="twitter:description" content="Log every boulder and rope climb: grades, attempts, styles and gyms. Snap a photo to identify the route and see exactly what to improve.">
+  <meta name="twitter:title" content="Climbing Addicts — Open beta: climbing progress logbook">
+  <meta name="twitter:description" content="App under construction, open beta: route logbook, progression, crews. Photo AI in development. Your feedback drives the roadmap.">
   <meta name="twitter:image" content="https://climbing-addicts.pages.dev/assets/images/logo-ecusson-notext.svg">
   <link rel="alternate" hreflang="fr" href="https://climbing-addicts.pages.dev/">
   <link rel="alternate" hreflang="en" href="https://climbing-addicts.pages.dev/en/">
@@ -43,8 +43,8 @@
         <nav class="nav">
           <a href="#features" class="nav-link">Features</a>
           <a href="blog/" class="nav-link">Blog</a>
-          <a href="../auth.html" class="nav-link">Sign in</a>
-          <a href="#download" class="nav-link btn-primary">Download</a>
+          <a href="https://climbingaddicts.app" class="nav-link">Try the beta</a>
+          <a href="#support" class="nav-link btn-primary">Support</a>
         </nav>
         <div class="lang-switcher" role="group" aria-label="Language / Langue">
           <a href="../" hreflang="fr">FR</a>
@@ -57,24 +57,25 @@
   <main>
     <section class="hero-main">
       <div class="container">
-        <h1>Track Every Climb.<br>Progress Faster.</h1>
-        <p class="hero-subtitle">Log every boulder and rope climb: grades, attempts, styles and gyms. Snap a photo to identify the route and see exactly what to improve.</p>
+        <p class="beta-badge">🚧 App under construction — open beta</p>
+        <h1>Climb with your people.</h1>
+        <p class="hero-subtitle">I'm building Climbing Addicts solo and in the open: boulder and route logbook, progression, crews. AI photo recognition is in development. Try the web beta and tell me what breaks — your feedback drives the roadmap.</p>
         <div class="hero-cta">
-          <a href="#download" class="btn btn-lg btn-primary">Start for free</a>
-          <a href="#features" class="btn btn-lg btn-secondary">See features</a>
+          <a href="https://climbingaddicts.app" class="btn btn-lg btn-primary">Try the beta</a>
+          <a href="mailto:benoit@climbingaddicts.app" class="btn btn-lg btn-secondary">Share feedback</a>
         </div>
         <div class="hero-stats">
           <div class="stat">
-            <span class="stat-value">50k+</span>
-            <span class="stat-label">Logged climbs</span>
+            <span class="stat-value">Beta</span>
+            <span class="stat-label">Open web</span>
           </div>
           <div class="stat">
-            <span class="stat-value">200+</span>
-            <span class="stat-label">Partner gyms</span>
+            <span class="stat-value">Solo</span>
+            <span class="stat-label">Independently built</span>
           </div>
           <div class="stat">
-            <span class="stat-value">4.9★</span>
-            <span class="stat-label">App Store rating</span>
+            <span class="stat-value">You</span>
+            <span class="stat-label">Your feedback sets the roadmap</span>
           </div>
         </div>
       </div>
@@ -83,56 +84,62 @@
     <section id="features" class="features">
       <div class="container">
         <header class="section-header">
-          <h2>Everything to progress</h2>
-          <p>Tools made by climbers, for climbers.</p>
+          <h2>What works, what's in progress</h2>
+          <p>Honest status: live in beta or in development.</p>
         </header>
         <div class="features-grid">
           <article class="feature-card">
             <div class="feature-icon">
               <img src="../assets/images/climbing-addicts-badge.svg" alt="" width="48" height="48">
             </div>
-            <h3>Full climbing logbook</h3>
-            <p>Log every attempt: grade, style (flash, redpoint, project), climb type, gym. Filter and analyze your progress.</p>
+            <p class="feature-status is-live">Live in beta</p>
+            <h3>Climbing logbook</h3>
+            <p>Log every attempt: grade, flash / send / project, gym, photos. The foundation for everything else.</p>
           </article>
           <article class="feature-card">
             <div class="feature-icon">
               <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><circle cx="8.5" cy="8.5" r="1.5"></circle><circle cx="15.5" cy="8.5" r="1.5"></circle><path d="M3 14h18"></path></svg>
             </div>
+            <p class="feature-status is-building">In development</p>
             <h3>Photo recognition</h3>
-            <p>Snap a photo of a route or boulder: the app identifies the grade, style and suggests what to work on.</p>
+            <p>Hold segmentation already works; automatic color and grade detection is paused while I plug in a new AI provider. Meanwhile, your photo is saved with the log.</p>
           </article>
           <article class="feature-card">
             <div class="feature-icon">
               <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M21 10V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h4"></path><polyline points="14 2 18 6 10 14"></polyline><line x1="16" y1="12" x2="16" y2="8"></line><line x1="12" y1="16" x2="8" y2="12"></line></svg>
             </div>
-            <h3>Stats &amp; insights</h3>
-            <p>Visualize your progress: grade pyramids, style heatmaps, per-gym progression, over-time comparison.</p>
+            <p class="feature-status is-live">Live in beta</p>
+            <h3>Stats & progression</h3>
+            <p>First panels live: progression, altitude, grade distribution. Advanced insights (pyramids, heatmaps, prediction) ship with your feedback.</p>
           </article>
           <article class="feature-card">
             <div class="feature-icon">
               <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
             </div>
-            <h3>Community &amp; challenges</h3>
-            <p>Join monthly challenges, share your projects, stay motivated with friends. Climbing is better together.</p>
+            <p class="feature-status is-live">Live in beta</p>
+            <h3>Crews & challenges</h3>
+            <p>Create your crew, share live sessions, compare progression. Testers welcome — this is where your feedback matters most.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="download" class="download">
+    <section id="support" class="download">
       <div class="container">
         <div class="download-content">
           <div class="download-text">
-            <h2>Ready to climb stronger?</h2>
-            <p>Available on iOS and Android. Cloud sync, offline mode, data export.</p>
+            <p class="feature-status is-live">Open web beta — not on the stores yet</p>
+            <h2>Test it, tell me, support the build</h2>
+            <p>The app already runs on the web: create an account, log a session, invite your crew. A bug, an idea, a gym to map? Write to <a href="mailto:benoit@climbingaddicts.app">benoit@climbingaddicts.app</a> — I read everything. And if you like the project, buy me a coffee: it funds development and the photo AI.</p>
             <div class="store-buttons">
-              <a href="#" class="store-btn" aria-label="Download on the App Store">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 6.53c-.62-.62-1.71-.62-2.33 0L11 11.33 7.61 7.95c-.62-.62-1.71-.62-2.33 0s-.62 1.71 0 2.33l4 4c.31.31.71.31 1.02 0l8-8c.62-.63.62-1.71 0-2.34z"></path></svg>
-                <span>App Store</span>
+              <a href="https://climbingaddicts.app" class="store-btn" aria-label="Open the web beta">
+                <span>Open the beta →</span>
               </a>
-              <a href="#" class="store-btn" aria-label="Get it on Google Play">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"></path></svg>
-                <span>Google Play</span>
+              <a href="https://buymeacoffee.com/benoitdhennin" target="_blank" rel="noopener" class="store-btn" aria-label="Support on Buy Me a Coffee">
+                <span>☕ Buy me a coffee</span>
+              </a>
+              <a href="mailto:benoit@climbingaddicts.app" class="store-btn" aria-label="Share feedback by email">
+                <span>✉️ Share feedback</span>
               </a>
             </div>
           </div>
@@ -152,7 +159,7 @@
             <img src="../assets/images/favicon.svg" alt="" width="40" height="40">
             <span>Climbing Addicts</span>
           </a>
-          <p>The app for climbers who want to progress.</p>
+          <p>The beta app for climbers who progress together. Contact: <a href="mailto:benoit@climbingaddicts.app">benoit@climbingaddicts.app</a></p>
           <div class="lang-switcher" role="group" aria-label="Language / Langue" style="margin-top:16px">
             <a href="../" hreflang="fr">FR</a>
             <a href="./" class="is-active" hreflang="en" aria-current="true">EN</a>
@@ -162,18 +169,16 @@
           <h4>Product</h4>
           <ul>
             <li><a href="#features">Features</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Download</a></li>
-            <li><a href="#">Changelog</a></li>
+            <li><a href="https://climbingaddicts.app">Try the beta</a></li>
+            <li><a href="https://buymeacoffee.com/benoitdhennin" target="_blank" rel="noopener">Support ☕</a></li>
           </ul>
         </nav>
         <nav class="footer-nav">
           <h4>Community</h4>
           <ul>
             <li><a href="blog/">Blog</a></li>
-            <li><a href="#">Challenges</a></li>
-            <li><a href="#">Partner gyms</a></li>
-            <li><a href="#">Ambassadors</a></li>
+            <li><a href="mailto:benoit@climbingaddicts.app">Share feedback</a></li>
+            <li><a href="mailto:benoit@climbingaddicts.app">Suggest my gym</a></li>
           </ul>
         </nav>
         <nav class="footer-nav">
@@ -186,7 +191,7 @@
         </nav>
       </div>
       <div class="footer-bottom">
-        <p>© 2025 Climbing Addicts. All rights reserved.</p>
+        <p>© 2026 Climbing Addicts — beta under construction. All rights reserved.</p>
       </div>
     </div>
   </footer>
