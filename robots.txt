@@ -1,4 +1,9 @@
 User-agent: *
 Allow: /
 
+# Pages de dev (ceinture + bretelles : aussi exclues du déploiement via .assetsignore)
+Disallow: /auth.html
+Disallow: /logo-design.html
+Disallow: /animations.html
+
 Sitemap: https://climbing-addicts.pages.dev/sitemap.xml

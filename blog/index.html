@@ -10,8 +10,18 @@
   <meta property="og:url" content="https://climbing-addicts.pages.dev/blog/">
   <meta property="og:title" content="Blog — Climbing Addicts">
   <meta property="og:description" content="Conseils entraînement, technique, matos et récits de grimpe.">
+  <meta property="og:image" content="https://climbing-addicts.pages.dev/assets/images/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Climbing Addicts — carnet d'escalade, bloc et voie, bêta ouverte">
+  <meta property="og:site_name" content="Climbing Addicts">
   <meta property="og:locale" content="fr_FR">
   <meta property="og:locale:alternate" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Blog — Climbing Addicts">
+  <meta name="twitter:description" content="Conseils entraînement, technique, matos et récits de grimpe.">
+  <meta name="twitter:image" content="https://climbing-addicts.pages.dev/assets/images/og-cover.png">
+  <meta name="twitter:image:alt" content="Climbing Addicts — carnet d'escalade, bloc et voie, bêta ouverte">
   <link rel="alternate" hreflang="fr" href="https://climbing-addicts.pages.dev/blog/">
   <link rel="alternate" hreflang="en" href="https://climbing-addicts.pages.dev/en/blog/">
   <link rel="alternate" hreflang="x-default" href="https://climbing-addicts.pages.dev/blog/">
@@ -20,13 +30,15 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/style.css">
+  <!-- Cloudflare Web Analytics (gratuit, sans cookie) : remplacez 6c7a9274ac1c46a39c537d1ae2f9e60d par le token du site (dashboard Cloudflare → Web Analytics → Manage site). -->
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "6c7a9274ac1c46a39c537d1ae2f9e60d"}'></script>
   <style>
     .blog-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; padding: 40px 0 100px; }
     .blog-card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 28px; }
     .blog-card .tag { display: inline-block; font-size: .75rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--accent); margin-bottom: 12px; }
     .blog-card h2 { font-size: 1.75rem; margin-bottom: 8px; }
     .blog-card p { color: var(--fg-muted); margin-bottom: 16px; }
-    .blog-card a.read { color: var(--accent); font-weight: 600; }
+    .blog-card .read { color: var(--accent); font-weight: 600; }
     .blog-hero { padding: calc(var(--header-h) + 60px) 0 0; text-align: center; }
   </style>
 </head>
@@ -38,12 +50,15 @@
         <span class="logo-text"><span class="logo-climbing">CLIMBING</span><span class="logo-addicts">ADDICTS</span></span>
       </a>
       <div class="header-actions">
-        <nav class="nav">
+        <nav class="nav" id="primary-nav">
           <a href="../index.html#features" class="nav-link">Fonctionnalités</a>
           <a href="./" class="nav-link">Blog</a>
           <a href="https://climbingaddicts.app" class="nav-link">Tester la bêta</a>
           <a href="../index.html#soutenir" class="nav-link btn-primary">Soutenir</a>
         </nav>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Ouvrir le menu" data-label-open="Ouvrir le menu" data-label-close="Fermer le menu">
+          <span class="nav-toggle-icon" aria-hidden="true"></span>
+        </button>
         <div class="lang-switcher" role="group" aria-label="Language / Langue">
           <a href="./" class="is-active" hreflang="fr" aria-current="true">FR</a>
           <a href="../en/blog/" hreflang="en">EN</a>
@@ -63,7 +78,7 @@
         <span class="tag">Entraînement</span>
         <h2>Progresser en bloc : la règle des 3 essais</h2>
         <p>Comment structurer vos séances pour passer de 6A à 6C sans vous blesser…</p>
-        <a class="read" href="#">Lire l’article</a>
+        <span class="read">Article à venir — premier billet bientôt en ligne</span>
       </article>
     </div>
   </main>
@@ -79,5 +94,6 @@
     </div>
   </footer>
 
+  <script src="../assets/js/main.js"></script>
 </body>
 </html>

@@ -10,13 +10,18 @@
   <meta property="og:url" content="https://climbing-addicts.pages.dev/">
   <meta property="og:title" content="Climbing Addicts — Bêta ouverte : carnet de progression en escalade">
   <meta property="og:description" content="Application en construction, bêta ouverte : carnet de voies, progression, crews. Photo IA en cours de dev. Vos retours pilotent la roadmap.">
-  <meta property="og:image" content="https://climbing-addicts.pages.dev/assets/images/logo-ecusson-notext.svg">
+  <meta property="og:image" content="https://climbing-addicts.pages.dev/assets/images/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Climbing Addicts — carnet d'escalade, bloc et voie, bêta ouverte">
+  <meta property="og:site_name" content="Climbing Addicts">
   <meta property="og:locale" content="fr_FR">
   <meta property="og:locale:alternate" content="en_US">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Climbing Addicts — Bêta ouverte : carnet de progression en escalade">
   <meta name="twitter:description" content="Application en construction, bêta ouverte : carnet de voies, progression, crews. Photo IA en cours de dev. Vos retours pilotent la roadmap.">
-  <meta name="twitter:image" content="https://climbing-addicts.pages.dev/assets/images/logo-ecusson-notext.svg">
+  <meta name="twitter:image" content="https://climbing-addicts.pages.dev/assets/images/og-cover.png">
+  <meta name="twitter:image:alt" content="Climbing Addicts — carnet d'escalade, bloc et voie, bêta ouverte">
   <!-- SEO multilingue : URLs dédiées par langue, contenu pré-rendu sans JS -->
   <link rel="alternate" hreflang="fr" href="https://climbing-addicts.pages.dev/">
   <link rel="alternate" hreflang="en" href="https://climbing-addicts.pages.dev/en/">
@@ -29,11 +34,36 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Cloudflare Web Analytics (gratuit, sans cookie) : remplacez 6c7a9274ac1c46a39c537d1ae2f9e60d par le token du site (dashboard Cloudflare → Web Analytics → Manage site). -->
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "6c7a9274ac1c46a39c537d1ae2f9e60d"}'></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "SoftwareApplication",
+        "name": "Climbing Addicts",
+        "description": "Carnet de progression en escalade : logguez blocs et voies, suivez vos cotations, grimpez en crew. Bêta web ouverte et gratuite.",
+        "applicationCategory": "SportsApplication",
+        "operatingSystem": "Web",
+        "inLanguage": "fr",
+        "url": "https://climbing-addicts.pages.dev/",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" }
+      },
+      {
+        "@type": "WebSite",
+        "name": "Climbing Addicts",
+        "url": "https://climbing-addicts.pages.dev/",
+        "inLanguage": "fr"
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <header class="header">
     <div class="container">
-      <a href="#" class="logo" aria-label="Climbing Addicts Home">
+      <a href="/" class="logo" aria-label="Climbing Addicts Home">
         <img src="assets/images/logo-ecusson-notext.svg" alt="" width="64" height="70">
         <span class="logo-text">
           <span class="logo-climbing">CLIMBING</span>
@@ -41,12 +71,15 @@
         </span>
       </a>
       <div class="header-actions">
-        <nav class="nav">
+        <nav class="nav" id="primary-nav">
           <a href="#features" class="nav-link">Fonctionnalités</a>
           <a href="blog/" class="nav-link">Blog</a>
           <a href="https://climbingaddicts.app" class="nav-link">Tester la bêta</a>
           <a href="#soutenir" class="nav-link btn-primary">Soutenir</a>
         </nav>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Ouvrir le menu" data-label-open="Ouvrir le menu" data-label-close="Fermer le menu">
+          <span class="nav-toggle-icon" aria-hidden="true"></span>
+        </button>
         <div class="lang-switcher" role="group" aria-label="Language / Langue">
           <a href="./" class="is-active" hreflang="fr" aria-current="true">FR</a>
           <a href="en/" hreflang="en">EN</a>
@@ -59,7 +92,8 @@
     <section class="hero-main">
       <div class="container">
         <p class="beta-badge">🚧 Application en construction — bêta ouverte</p>
-        <h1>Climb with your people.</h1>
+        <h1>Ton carnet d'escalade, bloc et voie, qui te fait progresser</h1>
+        <p class="hero-tagline" lang="en">Climb with your people.</p>
         <p class="hero-subtitle">Je construis Climbing Addicts seul et en public : carnet de blocs et voies, progression, crews. La reconnaissance photo IA est en cours de développement. Testez la bêta web et dites-moi ce qui coince — vos retours pilotent la roadmap.</p>
         <div class="hero-cta">
           <a href="https://climbingaddicts.app" class="btn btn-lg btn-primary">Tester la bêta</a>
@@ -145,7 +179,15 @@
             </div>
           </div>
           <div class="download-phone">
-            <img src="assets/images/climbing-addicts-logo-light.svg" alt="Aperçu de l'application Climbing Addicts" width="280">
+            <img src="assets/images/climbing-addicts-logo-light.svg" alt="Logo Climbing Addicts" width="280">
+            <!-- TODO captures produit : déposer assets/images/screenshots/app-carnet.webp,
+                 app-stats.webp et app-crew.webp (1200 px max, < 150 Ko chacune) puis
+                 remplacer le logo ci-dessus par :
+            <figure class="app-shots">
+              <img src="assets/images/screenshots/app-carnet.webp" alt="Carnet d'escalade Climbing Addicts : séances de bloc et voie avec cotations" width="280" loading="lazy">
+              <img src="assets/images/screenshots/app-stats.webp" alt="Statistiques de progression Climbing Addicts : distribution des cotations" width="280" loading="lazy">
+              <img src="assets/images/screenshots/app-crew.webp" alt="Crew Climbing Addicts : sessions partagées entre grimpeurs" width="280" loading="lazy">
+            </figure> -->
           </div>
         </div>
       </div>
@@ -156,7 +198,7 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <a href="#" class="logo">
+          <a href="/" class="logo">
             <img src="assets/images/favicon.svg" alt="" width="40" height="40">
             <span>Climbing Addicts</span>
           </a>
@@ -185,9 +227,7 @@
         <nav class="footer-nav">
           <h4>Légal</h4>
           <ul>
-            <li><a href="#">Confidentialité</a></li>
-            <li><a href="#">CGU</a></li>
-            <li><a href="#">Cookies</a></li>
+            <li><a href="confidentialite.html">Confidentialité</a></li>
           </ul>
         </nav>
       </div>

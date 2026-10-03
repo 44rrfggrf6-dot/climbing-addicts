@@ -22,6 +22,14 @@ croisé entre les deux pour l'instant.
 - Blog : `/blog/` (FR) et `/en/blog/` (EN), un article par langue et par page.
 - `hreflang` croisés + `canonical` absolus sur les 4 pages, `sitemap.xml` + `robots.txt`.
 - `auth.html`, `badges.html`, `animations.html`, `logo-design.html` : `noindex`.
+- `auth.html`, `logo-design.html`, `animations.html` + `assets/images/splash.gif`
+  et `collect-holds.gif` : exclus du déploiement via `.assetsignore`
+  (lu par `wrangler pages deploy .`) + `Disallow` dans `robots.txt`.
+- Légal : `confidentialite.html` (FR) et `en/privacy.html` (EN), branchées
+  dans les footers. Pas de pages CGU/Cookies : liens retirés plutôt que laissés morts.
+- Partage social : `assets/images/og-cover.png` (1200×630, < 150 Ko),
+  référencé en `og:image`/`twitter:image` sur les 6 pages publiques
+  (accueils, blogs, pages légales) avec `og:site_name` et dimensions.
 - Règle de maintenance : tout texte ajouté en FR sur `/` ou `/blog/` doit être
   traduit en miroir sur `/en/` ou `/en/blog/`.
 

@@ -10,13 +10,18 @@
   <meta property="og:url" content="https://climbing-addicts.pages.dev/en/">
   <meta property="og:title" content="Climbing Addicts — Open beta: climbing progress logbook">
   <meta property="og:description" content="App under construction, open beta: route logbook, progression, crews. Photo AI in development. Your feedback drives the roadmap.">
-  <meta property="og:image" content="https://climbing-addicts.pages.dev/assets/images/logo-ecusson-notext.svg">
+  <meta property="og:image" content="https://climbing-addicts.pages.dev/assets/images/og-cover.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Climbing Addicts — bouldering and route logbook, open beta">
+  <meta property="og:site_name" content="Climbing Addicts">
   <meta property="og:locale" content="en_US">
   <meta property="og:locale:alternate" content="fr_FR">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Climbing Addicts — Open beta: climbing progress logbook">
   <meta name="twitter:description" content="App under construction, open beta: route logbook, progression, crews. Photo AI in development. Your feedback drives the roadmap.">
-  <meta name="twitter:image" content="https://climbing-addicts.pages.dev/assets/images/logo-ecusson-notext.svg">
+  <meta name="twitter:image" content="https://climbing-addicts.pages.dev/assets/images/og-cover.png">
+  <meta name="twitter:image:alt" content="Climbing Addicts — bouldering and route logbook, open beta">
   <link rel="alternate" hreflang="fr" href="https://climbing-addicts.pages.dev/">
   <link rel="alternate" hreflang="en" href="https://climbing-addicts.pages.dev/en/">
   <link rel="alternate" hreflang="x-default" href="https://climbing-addicts.pages.dev/">
@@ -28,6 +33,31 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../assets/css/style.css">
+  <!-- Cloudflare Web Analytics (free, cookie-free): replace 6c7a9274ac1c46a39c537d1ae2f9e60d with the site token (Cloudflare dashboard → Web Analytics → Manage site). -->
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "6c7a9274ac1c46a39c537d1ae2f9e60d"}'></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "SoftwareApplication",
+        "name": "Climbing Addicts",
+        "description": "Climbing progress logbook: log boulders and routes, track your grades, climb with your crew. Free open web beta.",
+        "applicationCategory": "SportsApplication",
+        "operatingSystem": "Web",
+        "inLanguage": "en",
+        "url": "https://climbing-addicts.pages.dev/en/",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" }
+      },
+      {
+        "@type": "WebSite",
+        "name": "Climbing Addicts",
+        "url": "https://climbing-addicts.pages.dev/en/",
+        "inLanguage": "en"
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <header class="header">
@@ -40,12 +70,15 @@
         </span>
       </a>
       <div class="header-actions">
-        <nav class="nav">
+        <nav class="nav" id="primary-nav">
           <a href="#features" class="nav-link">Features</a>
           <a href="blog/" class="nav-link">Blog</a>
           <a href="https://climbingaddicts.app" class="nav-link">Try the beta</a>
           <a href="#support" class="nav-link btn-primary">Support</a>
         </nav>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu" data-label-open="Open menu" data-label-close="Close menu">
+          <span class="nav-toggle-icon" aria-hidden="true"></span>
+        </button>
         <div class="lang-switcher" role="group" aria-label="Language / Langue">
           <a href="../" hreflang="fr">FR</a>
           <a href="./" class="is-active" hreflang="en" aria-current="true">EN</a>
@@ -58,7 +91,8 @@
     <section class="hero-main">
       <div class="container">
         <p class="beta-badge">🚧 App under construction — open beta</p>
-        <h1>Climb with your people.</h1>
+        <h1>Your climbing logbook for bouldering and routes, built for progression</h1>
+        <p class="hero-tagline">Climb with your people.</p>
         <p class="hero-subtitle">I'm building Climbing Addicts solo and in the open: boulder and route logbook, progression, crews. AI photo recognition is in development. Try the web beta and tell me what breaks — your feedback drives the roadmap.</p>
         <div class="hero-cta">
           <a href="https://climbingaddicts.app" class="btn btn-lg btn-primary">Try the beta</a>
@@ -144,7 +178,15 @@
             </div>
           </div>
           <div class="download-phone">
-            <img src="../assets/images/climbing-addicts-logo-light.svg" alt="Climbing Addicts app preview" width="280">
+            <img src="../assets/images/climbing-addicts-logo-light.svg" alt="Climbing Addicts logo" width="280">
+            <!-- TODO product screenshots: drop assets/images/screenshots/app-logbook.webp,
+                 app-stats.webp and app-crew.webp (max 1200px wide, < 150 KB each) then
+                 replace the logo above with:
+            <figure class="app-shots">
+              <img src="../assets/images/screenshots/app-logbook.webp" alt="Climbing Addicts climbing logbook: bouldering and route sessions with grades" width="280" loading="lazy">
+              <img src="../assets/images/screenshots/app-stats.webp" alt="Climbing Addicts progression stats: grade distribution" width="280" loading="lazy">
+              <img src="../assets/images/screenshots/app-crew.webp" alt="Climbing Addicts crew: sessions shared between climbers" width="280" loading="lazy">
+            </figure> -->
           </div>
         </div>
       </div>
@@ -184,9 +226,7 @@
         <nav class="footer-nav">
           <h4>Legal</h4>
           <ul>
-            <li><a href="#">Privacy</a></li>
-            <li><a href="#">Terms</a></li>
-            <li><a href="#">Cookies</a></li>
+            <li><a href="privacy.html">Privacy</a></li>
           </ul>
         </nav>
       </div>
