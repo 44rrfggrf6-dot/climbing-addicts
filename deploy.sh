@@ -7,5 +7,6 @@ OUT="$(mktemp -d)"
 trap 'rm -rf "$OUT"' EXIT
 rsync -a --exclude='.*' --exclude='node_modules' --exclude='README.md' --exclude='deploy.sh' \
   --exclude-from=<(grep -v '^#' .assetsignore | grep -v '^$') ./ "$OUT/"
-wrangler pages deploy "$OUT" --project-name=climbing-addicts --branch=main \
+WRANGLER="wrangler"; command -v wrangler >/dev/null || WRANGLER="npx --yes wrangler@4"
+$WRANGLER pages deploy "$OUT" --project-name=climbing-addicts --branch=main \
   --commit-hash="$(git rev-parse HEAD)" --commit-message="$(git log -1 --format=%s)"
