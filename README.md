@@ -20,7 +20,7 @@ croisé entre les deux pour l'instant.
 
 - `/` = français (x-default), `/en/` = anglais : contenu **pré-rendu en HTML brut**,
   sans dépendance JS — Google indexe chaque langue séparément.
-- Blog : `/blog/` (FR) et `/en/blog/` (EN), un article par langue et par page.
+- Blog supprimé le 2026-10-04 : `/blog/` et `/en/blog/` redirigent (301) vers l'accueil via `_redirects`.
 - `hreflang` croisés + `canonical` absolus sur les 4 pages, `sitemap.xml` + `robots.txt`.
 - `auth.html`, `badges.html`, `animations.html`, `logo-design.html` : `noindex`.
 - `auth.html`, `logo-design.html`, `animations.html` + `assets/images/splash.gif`
@@ -30,9 +30,9 @@ croisé entre les deux pour l'instant.
   dans les footers. Pas de pages CGU/Cookies : liens retirés plutôt que laissés morts.
 - Partage social : `assets/images/og-cover.png` (1200×630, < 150 Ko),
   référencé en `og:image`/`twitter:image` sur les 6 pages publiques
-  (accueils, blogs, pages légales) avec `og:site_name` et dimensions.
-- Règle de maintenance : tout texte ajouté en FR sur `/` ou `/blog/` doit être
-  traduit en miroir sur `/en/` ou `/en/blog/`.
+  (accueils, pages légales) avec `og:site_name` et dimensions.
+- Règle de maintenance : tout texte ajouté en FR sur `/` doit être
+  traduit en miroir sur `/en/`.
 
 ## Structure
 

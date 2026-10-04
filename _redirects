@@ -1,0 +1,4 @@
+/blog /  301
+/blog/* /  301
+/en/blog /en/  301
+/en/blog/* /en/  301
