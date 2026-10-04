@@ -25,7 +25,7 @@ croisé entre les deux pour l'instant.
 - `auth.html`, `badges.html`, `animations.html`, `logo-design.html` : `noindex`.
 - `auth.html`, `logo-design.html`, `animations.html` + `assets/images/splash.gif`
   et `collect-holds.gif` : exclus du déploiement via `.assetsignore`
-  (lu par `wrangler pages deploy .`) + `Disallow` dans `robots.txt`.
+  (appliqué par `./deploy.sh`) + `Disallow` dans `robots.txt`.
 - Légal : `confidentialite.html` (FR) et `en/privacy.html` (EN), branchées
   dans les footers. Pas de pages CGU/Cookies : liens retirés plutôt que laissés morts.
 - Partage social : `assets/images/og-cover.png` (1200×630, < 150 Ko),
