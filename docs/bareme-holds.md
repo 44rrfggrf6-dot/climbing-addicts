@@ -131,7 +131,10 @@ Avancent d'un cran par objectif de séances hebdo atteint (seuils inchangés : 0
 - Une séance sans voie n'est comptée nulle part dans les boards : ni séances, ni minutes, ni lieux, ni séance commune.
   Une séance rejointe compte si le participant y a logué au moins une voie.
 
-## 8. Écarts avec le code actuel (`src/lib/gamification.ts`)
+## 8. Écarts avec le code d'origine (historique)
+
+> Vérifié le 2026-10-09 : `origin/main` de l'app applique toutes les valeurs ci-dessus
+> (`src/lib/gamification/`). Le tableau ci-dessous décrit l'ancien code, pour mémoire.
 
 | Élément | Code actuel | Cible |
 | --- | --- | --- |
