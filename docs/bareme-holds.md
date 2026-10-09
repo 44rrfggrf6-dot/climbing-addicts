@@ -1,6 +1,7 @@
 # Barème des holds — référence site ↔ app
 
 > Source : section « Points & holds » du site (commit `a45aba6`, 2026-10-04).
+> Mis à jour le 2026-10-09 : une séance sans voie ne compte nulle part (§3, §4, §7).
 > But : aligner `climb-addicts-app` (`src/lib/gamification.ts`, `docs/gamification-charte.md`)
 > sur ce que le site annonce. Le site fait foi pour les valeurs ci-dessous.
 
@@ -46,6 +47,9 @@
 
 ## 3. Par séance (semaine lundi–dimanche)
 
+> **Une séance sans aucune voie ne rapporte rien** : ni base, ni bonus, et elle ne compte ni pour les séries ni pour
+> les boards de crew. Dans tout ce document, « séance » veut dire une séance où au moins une voie a été loggée.
+
 | Rang de la séance dans la semaine | Holds |
 | --- | --- |
 | 1re | 25 |
@@ -66,7 +70,7 @@ Bonus cumulables :
 
 | Palier | Règle | Holds |
 | --- | --- | --- |
-| Série | semaines consécutives avec ≥ 1 séance ; paliers 3 · 8 · 16 · 26 · 52 semaines ; 10 holds × nb de semaines | +30 · +80 · +160 · +260 · +520 |
+| Série | semaines consécutives avec ≥ 1 séance (avec au moins une voie) ; paliers 3 · 8 · 16 · 26 · 52 semaines ; 10 holds × nb de semaines | +30 · +80 · +160 · +260 · +520 |
 | Joker repos | 1 semaine sans séance par période de 4 semaines ne casse pas la série (elle gèle, ne compte pas) | — |
 | Paliers rejouables | une nouvelle série repaye ses paliers ; le meilleur run reste affiché comme « record » | — |
 | Série double | ≥ 2 séances/sem. : **badge seulement, pas de holds** (déjà payé par la 2e séance) | 0 |
@@ -124,6 +128,8 @@ Avancent d'un cran par objectif de séances hebdo atteint (seuils inchangés : 0
 
 - Le board **Progression** compte les holds de voies + séances de la semaine, **hors** bonus de paliers (séries, altitude) et hors gains de crew.
 - Égalités : rang partagé, pas de départage (inchangé).
+- Une séance sans voie n'est comptée nulle part dans les boards : ni séances, ni minutes, ni lieux, ni séance commune.
+  Une séance rejointe compte si le participant y a logué au moins une voie.
 
 ## 8. Écarts avec le code actuel (`src/lib/gamification.ts`)
 
