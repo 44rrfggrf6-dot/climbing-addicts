@@ -57,12 +57,16 @@
 | 3e | 45 |
 | 4e et suivantes | 15 (« le repos compte aussi ») |
 
-Bonus cumulables :
+> **Une seule base par jour calendaire.** Une pause longue ou un changement de salle peut ouvrir une 2e séance le même
+> jour : elle garde ses bonus propres (crew, nouveau lieu, vrai rocher) mais ne touche pas de seconde base. Le rang
+> (1re, 2e, 3e…) est donc celui du **jour** dans la semaine, pas celui de la séance.
+
+Bonus cumulables (la crew n'est plus une étiquette posée à la main sur la séance : elle se déduit) :
 
 | Bonus | Condition | Holds |
 | --- | --- | --- |
 | Bon retour | 1re séance après ≥ 3 semaines sans grimper | +50 |
-| Avec la crew | séance taguée crew | +15 |
+| Avec la crew | séance qui **chevauche dans le temps** celle d'un membre d'une de tes crews (qui a loggé au moins une voie), même salle ou non | +15 |
 | Nouveau lieu | 1re séance dans un lieu jamais loggé | +15 |
 | Vrai rocher | séance en extérieur | +20 |
 
@@ -97,9 +101,9 @@ Gains versés à **chaque membre ayant grimpé** sur la période. Tout ce qui vi
 
 | Action | Condition | Holds |
 | --- | --- | --- |
-| Rejoindre | à la 1re séance taguée avec la crew | +50 |
-| Créer | versé quand 3 membres y ont grimpé | +75 |
-| Accueillir | par nouveau membre qui fait sa 1re séance avec la crew, max 5 / mois | +20 |
+| Rejoindre | à l'adhésion | +50 |
+| Créer | versé au créateur quand 3 membres y ont chacun une séance avec au moins une voie | +75 |
+| Accueillir | par nouveau membre qui fait sa 1re séance (avec au moins une voie) après son adhésion, max 5 / mois et par crew ; versé **à l'invitant et au créateur** (une seule fois si c'est la même personne) | +20 |
 
 ### 6.2 Objectifs de la semaine
 
@@ -133,10 +137,15 @@ Avancent d'un cran par objectif de séances hebdo atteint (seuils inchangés : 0
 
 ## 8. Écarts avec le code d'origine (historique)
 
-> Vérifié le 2026-10-09 : `origin/main` de l'app applique toutes les valeurs ci-dessus
-> (`src/lib/gamification/`). Le tableau ci-dessous décrit l'ancien code, pour mémoire.
+> Vérifié le 2026-10-09 sur `origin/main` de l'app (`src/lib/gamification/`) : toutes les valeurs ci-dessus sont
+> appliquées, **à deux exceptions près** :
+>
+> - **Défi du mois (§6.3)** : les règles existent dans le code, mais ni choix par la crew, ni écran, ni versement.
+> - **Spots légendaires (§6.4)** : la progression est calculée, mais le +50 par nouveau spot n'est pas versé.
+>
+> Le tableau ci-dessous décrit l'ancien code, pour mémoire.
 
-| Élément | Code actuel | Cible |
+| Élément | Code d'origine | Cible |
 | --- | --- | --- |
 | Base voie | 30 / 25 / 15 | 25 / 20 / 10 |
 | Au-dessus du niveau | +25/cotation, max +50 | +15/cotation, max +30 |
@@ -155,7 +164,6 @@ Avancent d'un cran par objectif de séances hebdo atteint (seuils inchangés : 0
 | Défi du mois | rien | 4 défis, +40 à +60 |
 | Spots | progression sans holds | +50 par nouveau spot |
 
-À prévoir côté app :
-- `hold_points` est stocké à l'écriture : recalculer à la lecture (comme le taper actuel) ou migrer les valeurs existantes.
-- Porter les plafonds en SQL dans `league_week_ingredients` avant de brancher les boards dessus.
-- Mettre à jour `CLIMB_HOLD_RULES`, `SESSION_BONUSES`, `REWARD_GRID`, les tests `gamification.test.ts` et `docs/gamification-charte.md`.
+Fait côté app (2026-10-09) : les valeurs de `hold_points` déjà stockées ont été recalculées sans compensation (le
+2026-10-04) ; les plafonds s'appliquent à la lecture, en TypeScript comme en SQL (`league_week_ingredients`) ; constantes,
+tests et `docs/gamification-charte.md` de l'app sont à jour. Reste : défi du mois et +50 par spot (voir plus haut).
