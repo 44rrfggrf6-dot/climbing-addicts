@@ -95,7 +95,7 @@ Repère : ~600 holds/semaine à 2 séances → Crocus < 1 mois, Edelweiss ~1,5 a
 
 ## 6. Crew
 
-Gains versés à **chaque membre ayant grimpé** sur la période. Tout ce qui vient de la crew (objectifs, défis, boards, shout-outs, spots) est **plafonné à 150 holds / semaine / membre**, hors rejoindre/créer.
+Gains versés à **chaque membre ayant grimpé** sur la période. Tout ce qui vient de la crew (objectifs, boards, shout-outs) est **plafonné à 150 holds / semaine / membre**, hors rejoindre/créer.
 
 ### 6.1 Rejoindre et créer (une fois par crew, 3 crews max)
 
@@ -115,18 +115,8 @@ Gains versés à **chaque membre ayant grimpé** sur la période. Tout ce qui vi
 | Boards (6) | 1er 20 · 2e 15 · 3e 10 · sur le board 5 (par board) | 5–20 |
 | Shout-outs | non exclusifs | +10 chacun |
 
-### 6.3 Défi du mois (la crew en choisit 1 parmi 4)
-
-| Défi | Condition | Holds |
-| --- | --- | --- |
-| Sortie rocher | 1 séance outdoor à ≥ 3 membres | +60 |
-| Projets d'équipe | `membres × 2` projets bouclés dans le mois | +60 |
-| Personne derrière | chaque membre grimpe ≥ 2 semaines du mois | +60 |
-| Nouveau spot | séance commune dans un lieu inédit pour la crew | +40 |
-
-### 6.4 Spots légendaires
-
-Avancent d'un cran par objectif de séances hebdo atteint (seuils inchangés : 0 / 3 / 8 / 15 / 25 / 40 / 60 / 90) : Fontainebleau → Céüse → Verdon → Kalymnos → Magic Wood → Yosemite → Rocklands → Cerro Torre. Nouveau spot atteint : **+50 par membre actif**.
+> **Retirés le 2026-10-12** : le défi du mois et les spots légendaires (+50 par nouveau spot) ne font plus partie
+> du barème. Ni choix par la crew, ni écran, ni versement : rien n'est annoncé.
 
 ## 7. Boards hebdo
 
@@ -138,10 +128,7 @@ Avancent d'un cran par objectif de séances hebdo atteint (seuils inchangés : 0
 ## 8. Écarts avec le code d'origine (historique)
 
 > Vérifié le 2026-10-09 sur `origin/main` de l'app (`src/lib/gamification/`) : toutes les valeurs ci-dessus sont
-> appliquées, **à deux exceptions près** :
->
-> - **Défi du mois (§6.3)** : les règles existent dans le code, mais ni choix par la crew, ni écran, ni versement.
-> - **Spots légendaires (§6.4)** : la progression est calculée, mais le +50 par nouveau spot n'est pas versé.
+> appliquées. Le défi du mois et les spots légendaires, jamais livrés, ont été retirés du barème le 2026-10-12.
 >
 > Le tableau ci-dessous décrit l'ancien code, pour mémoire.
 
@@ -161,9 +148,7 @@ Avancent d'un cran par objectif de séances hebdo atteint (seuils inchangés : 0
 | Plafond crew | aucun | 150 / semaine |
 | Rejoindre / créer / accueillir | rien | +50 / +75 / +20 |
 | Toute la crew, séance commune | rien | +25 / +20 |
-| Défi du mois | rien | 4 défis, +40 à +60 |
-| Spots | progression sans holds | +50 par nouveau spot |
 
 Fait côté app (2026-10-09) : les valeurs de `hold_points` déjà stockées ont été recalculées sans compensation (le
 2026-10-04) ; les plafonds s'appliquent à la lecture, en TypeScript comme en SQL (`league_week_ingredients`) ; constantes,
-tests et `docs/gamification-charte.md` de l'app sont à jour. Reste : défi du mois et +50 par spot (voir plus haut).
+tests et `docs/gamification-charte.md` de l'app sont à jour.
